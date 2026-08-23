@@ -1,1 +1,70 @@
-{"data":[{"id":"R_kgDOOLhjfg","name":"spinning-teacup","createdAt":"2025-03-20T00:33:28Z","url":"https://github.com/big-oofff/spinning-teacup","description":"Analysis of a Spinning Teacup Ride similar to a ride in Disneyland","isFork":false,"languages":[]},{"id":"R_kgDOOMpkxg","name":"soccer-wins","createdAt":"2025-03-21T22:11:26Z","url":"https://github.com/big-oofff/soccer-wins","description":"Analysis of soccer wins based on two variables in the 2008-2016 seasons","isFork":false,"languages":[{"name":"Python","iconifyClass":"logos-python"}]},{"id":"R_kgDOOMp3AQ","name":"airfoil","createdAt":"2025-03-21T22:26:50Z","url":"https://github.com/big-oofff/airfoil","description":"Analysis of airfoil and redesign process","isFork":false,"languages":[{"name":"Python","iconifyClass":"logos-python"}]},{"id":"R_kgDOOMpx3w","name":"hot-air-balloon","createdAt":"2025-03-21T22:22:38Z","url":"https://github.com/big-oofff/hot-air-balloon","description":"Analysis of a hot air balloon","isFork":false,"languages":[]},{"id":"R_kgDOOMp7_g","name":"school-projects","createdAt":"2025-03-21T22:31:10Z","url":"https://github.com/big-oofff/school-projects","description":"Everything I have done for school, including some cool games","isFork":false,"languages":[{"name":"Python","iconifyClass":"logos-python"}]},{"id":"R_kgDOOMqBuQ","name":"m3-paper","createdAt":"2025-03-21T22:36:27Z","url":"https://github.com/big-oofff/m3-paper","description":"Our paper for the 2025 M3 challenge","isFork":false,"languages":[{"name":"Python","iconifyClass":"logos-python"}]}]}
+{
+  "data": [
+    {
+      "id": "R_kgDOOLhjfg",
+      "name": "Spinning Teacup Simulation",
+      "createdAt": "2025-03-20T00:33:28Z",
+      "url": "https://github.com/big-oofff/spinning-teacup",
+      "description": "Modeled the path and g-forces of riders on a teacup-style amusement ride.",
+      "image": "/project-images/spinning-teacup.jpg",
+      "imageAlt": "Interactive spinning teacup rider-path simulation",
+      "isFork": false,
+      "languages": []
+    },
+    {
+      "id": "R_kgDOOMpkxg",
+      "name": "Soccer Win Prediction",
+      "createdAt": "2025-03-21T22:11:26Z",
+      "url": "https://github.com/big-oofff/soccer-wins",
+      "description": "Built and evaluated a regression model for team wins across the 2008–2016 seasons.",
+      "image": "/project-images/soccer-wins.jpg",
+      "imageAlt": "Actual versus predicted soccer wins regression graph",
+      "isFork": false,
+      "languages": [{ "name": "Python", "iconifyClass": "logos-python" }]
+    },
+    {
+      "id": "R_kgDOOMp3AQ",
+      "name": "Airfoil Redesign",
+      "createdAt": "2025-03-21T22:26:50Z",
+      "url": "https://github.com/big-oofff/airfoil",
+      "description": "Used multivariable calculus and Python to analyze and redesign an airfoil.",
+      "image": "/project-images/airfoil.jpg",
+      "imageAlt": "Velocity vectors around a redesigned airfoil cross-section",
+      "isFork": false,
+      "languages": [{ "name": "Python", "iconifyClass": "logos-python" }]
+    },
+    {
+      "id": "R_kgDOOMpx3w",
+      "name": "Hot-Air Balloon Model",
+      "createdAt": "2025-03-21T22:22:38Z",
+      "url": "https://github.com/big-oofff/hot-air-balloon",
+      "description": "Modeled a balloon's geometry, volume, lift, and thermal behavior with calculus.",
+      "image": "/project-images/hot-air-balloon.jpg",
+      "imageAlt": "Three-dimensional mathematical model of a hot-air balloon",
+      "isFork": false,
+      "languages": []
+    },
+    {
+      "id": "R_kgDOOMp7_g",
+      "name": "Python Games & Utilities",
+      "createdAt": "2025-03-21T22:31:10Z",
+      "url": "https://github.com/big-oofff/school-projects",
+      "description": "A collection of games, ciphers, puzzles, and utilities—including a minimax tic-tac-toe opponent.",
+      "image": "/project-images/school-projects.svg",
+      "imageAlt": "Python code and a tic-tac-toe board",
+      "isFork": false,
+      "languages": [{ "name": "Python", "iconifyClass": "logos-python" }]
+    },
+    {
+      "id": "R_kgDOOMqBuQ",
+      "name": "M3 Challenge: Urban Heat",
+      "createdAt": "2025-03-21T22:36:27Z",
+      "url": "https://github.com/big-oofff/m3-paper",
+      "description": "Developed a data-driven model of urban heat, power demand, and vulnerability for the 2025 M3 Challenge.",
+      "image": "/project-images/m3-paper.jpg",
+      "imageAlt": "Correlation heatmap from the 2025 M3 Challenge model",
+      "isFork": false,
+      "languages": [{ "name": "Python", "iconifyClass": "logos-python" }]
+    }
+  ]
+}

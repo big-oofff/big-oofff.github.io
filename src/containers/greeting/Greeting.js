@@ -21,10 +21,7 @@ export default function Greeting(props) {
                   ( {greeting.nickname} )
                 </h2>
               )}
-              <p
-                className="greeting-text-p subTitle"
-                style={{ color: theme.secondaryText }}
-              >
+              <p className="greeting-text-p subTitle" style={{ color: theme.secondaryText }}>
                 {greeting.subTitle}
               </p>
               <SocialMedia theme={theme} />
@@ -42,7 +39,7 @@ export default function Greeting(props) {
           <div className="greeting-image-div">
             <img
               className="greeting-profile-photo"
-              src={`${process.env.PUBLIC_URL}/images/thomas-profile.png`}
+              src={`${process.env.PUBLIC_URL}/images/thomas-profile.jpg`}
               alt="Thomas Xiao"
             />
           </div>
