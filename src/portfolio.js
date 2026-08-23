@@ -10,7 +10,7 @@ const settings = {
 //SEO Related settings
 const seo = {
   title: "Thomas's Portfolio",
-  description: "Applied Mathematics student at Carnegie Mellon University focused on quantitative research, scientific computing, and data-driven modeling.",
+  description: "A small corner of the internet for Thomas Xiao's math, code, research, and other things he finds interesting.",
   og: {
     title: "Thomas Xiao Portfolio",
     type: "website",
@@ -23,7 +23,7 @@ const greeting = {
   title: "Thomas Xiao",
   logo_name: "ThomasXiao",
   nickname: "肖舜齐",
-  subTitle: "Applied Mathematics student at Carnegie Mellon University focused on quantitative research, scientific computing, and AI.",
+  subTitle: "I like using math, code, and data to figure out how things work - and to build things that are actually useful.",
   resumeLink:
     "/Thomas-Xiao-Resume.pdf",
   resume:
@@ -79,9 +79,9 @@ const skills = {
       title: "Mathematics",
       fileName: "DataScienceImg",
       skills: [
-        "- Applied mathematics coursework spanning calculus, linear algebra, differential equations, probability, and statistics",
-        "- HiMCM Honorable Mention (top 28% of 1,055 teams) for mathematical modeling",
-        "- 2nd Place at the USC SCMC Math Competition and CSULB Math Day at the Beach",
+        "- I like taking messy questions and turning them into models I can test, visualize, and explain.",
+        "- My HiMCM team earned an Honorable Mention, placing in the top 28% of 1,055 teams.",
+        "- I also placed 2nd at both the USC SCMC Math Competition and CSULB Math Day at the Beach.",
       ],
       softwareSkills: [
         {
@@ -125,10 +125,10 @@ const skills = {
       title: "Programming",
       fileName: "DesignImg",
       skills: [
-        "- Build statistical and scientific-computing workflows in Python using NumPy, pandas, and Matplotlib",
-        "- Board and Program Lead for Beckman Computer Science Club; taught algorithms and data structures to 15+ students",
-        "- Built interactive projects including a real-time Desmos Bezier renderer and this React portfolio",
-        "- Competition experience in USACO, ACSL, and CALICO",
+        "- Python is my usual toolbox - NumPy, pandas, and Matplotlib do most of the heavy lifting.",
+        "- I helped run Beckman's Computer Science Club and taught algorithms and data structures to 15+ students.",
+        "- I build interactive things for fun, including a real-time Desmos Bezier renderer and this site.",
+        "- I have also competed in USACO, ACSL, and CALICO.",
       ],
       softwareSkills: [
         {
@@ -215,9 +215,9 @@ const skills = {
       title: "Speech and Debate",
       fileName: "FullStackImg",
       skills: [
-        "- Parliamentary and Lincoln-Douglas debater on the Southern California and national circuits (2019-2023)",
-        "- 1st Place Speaker in Lincoln-Douglas Debate at the NSDA Stanford Invitational",
-        "- 2022 National Online Forensics Parliamentary Debate Champion; led practices for 10+ peers",
+        "- I spent four years in Parliamentary and Lincoln-Douglas debate on the Southern California and national circuits.",
+        "- Along the way, I won 1st Place Speaker in Lincoln-Douglas Debate at the NSDA Stanford Invitational.",
+        "- I was also the 2022 National Online Forensics Parliamentary Debate Champion and helped lead practice for 10+ teammates.",
       ],
       softwareSkills: [
         {
@@ -413,7 +413,7 @@ const degrees = {
       alt_name: "CMU",
       duration: "2026 - 2030",
       descriptions: [
-        "I am an Applied Mathematics undergraduate at Carnegie Mellon University, expected to graduate in 2030. My interests include quantitative research, scientific computing, mathematical modeling, and data-driven methods for real-world problems.",
+        "I'm heading to Carnegie Mellon to study Applied Mathematics. I'm especially curious about quantitative research, scientific computing, and what happens when good math meets real-world data.",
       ],
       website_link: "https://www.cmu.edu/",
     },
@@ -424,7 +424,7 @@ const degrees = {
       alt_name: "CTY",
       duration: "2024",
       descriptions: [
-        "I have studied Multivariable Calculus online over the summer of 2024, where I learned about vector calculus, partial derivatives, and multiple integrals, skills that were used to produce 4 long-term projects.",
+        "I spent summer 2024 working through multivariable calculus: vectors, partial derivatives, multiple integrals, and four long-term projects.",
       ],
       website_link: "https://cty.jhu.edu/",
     },
@@ -435,8 +435,8 @@ const degrees = {
       alt_name: "IVC",
       duration: "2023 - 2025",
       descriptions: [
-        "I have studied Precalculus over the summer of 2023, in order to prepare for AP Calculus BC in the upcoming school year.",
-        "I have studied Linear Algebra over the fall semester of 2024, where I learned about vector spaces, linear transformations, and matrix algebra.",
+        "I took precalculus at IVC in summer 2023 to get ready for AP Calculus BC.",
+        "I came back for linear algebra in fall 2024 and got especially interested in vector spaces, linear transformations, and matrix algebra.",
       ],
       website_link: "https://www.ivc.edu",
     },
@@ -447,7 +447,7 @@ const degrees = {
       alt_name: "Beckman",
       duration: "2022 - 2026",
       descriptions: [
-        "Completed a rigorous STEM curriculum including AP Calculus BC, AP Physics 1, AP Statistics, and AP Computer Science Principles.",
+        "My high-school schedule leaned heavily STEM: AP Calculus BC, AP Physics 1, AP Statistics, and AP Computer Science Principles.",
       ],
       website_link: "https://beckman.tustin.k12.ca.us",
     },
@@ -727,16 +727,16 @@ const experience = {
 
 // Projects Page
 const projectsHeader = {
-  title: "Research & Technical Projects",
+  title: "Things I've Built and Researched",
   description:
-    "Selected research, modeling papers, and technical projects. Open each project for its code, paper, figures, or supporting materials.",
+    "A mix of papers, code experiments, and projects I made because I wanted to see if an idea would work. Click around for the code, figures, and write-ups.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
-  title: "More Projects",
+  title: "A Few More Things",
   description:
-    "Additional software and mathematical projects, each linked to its code, demo, or supporting materials.",
+    "Smaller experiments and side projects, with links to the code, demos, and notes.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -747,7 +747,7 @@ const publications = {
       name: "Desmos Bezier Renderer",
       createdAt: "2025-03-21",
       description:
-        "A Desmos graphing integration program that renders Bezier curves in real-time, allowing for the creation of animations and dynamic graphs. Thanks to Junferno for the open-source.",
+        "A small Desmos integration that renders Bezier curves in real time for animations and dynamic graphs. Built on Junferno's open-source work.",
       url:
         "https://drive.google.com/file/d/1ohmnOF_5ZFarlQ7NXqltwmpqgvld8Iv2/view?usp=sharing",
     },
@@ -757,10 +757,10 @@ const publications = {
 // Contact Page
 const contactPageData = {
   contactSection: {
-    title: "Contact Me",
+    title: "Say Hello",
     profile_image_path: "pfp2.png",
     description:
-      "I am an Applied Mathematics student at Carnegie Mellon University interested in quantitative research, scientific computing, and the intersection of mathematical modeling and AI. My work includes climate time-series analysis, consumer-behavior research, interactive mathematical software, tutoring, and competitive debate. The best way to reach me is by email.",
+      "Hi, I'm Thomas. I like math, code, research, and making complicated ideas easier to understand. If you want to talk about a project, research, or something interesting, email is the best way to reach me.",
   },
   blogSection: {
     title: "",
