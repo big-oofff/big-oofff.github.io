@@ -37,9 +37,9 @@ const featuredWork = [
     type: "USC Marshall Research",
     description:
       "Studied how ratings, complexity, play time, and other gameplay variables relate to sales and consumer response in BoardGameGeek data.",
-    image:
-      "https://opengraph.githubassets.com/1/big-oofff/board-game-analysis",
-    imageAlt: "GitHub preview for the board-game analysis research repository",
+    image: "/project-images/board-game-paper.png",
+    imageAlt:
+      "Correlation heatmap from Thomas Xiao's BoardGameGeek research paper",
     languages: ["LaTeX"],
     paperUrl:
       "https://github.com/big-oofff/board-game-analysis/blob/main/compiledanalysis.pdf",
@@ -62,8 +62,9 @@ const featuredWork = [
     type: "Honorable Mention Paper",
     description:
       "Built and communicated a team mathematical model that earned Honorable Mention in the international HiMCM competition.",
-    image: "https://opengraph.githubassets.com/1/big-oofff/himcm",
-    imageAlt: "GitHub preview for the HiMCM paper repository",
+    image: "/project-images/himcm-paper.jpg",
+    imageAlt:
+      "Emissions comparison figure from Thomas Xiao's HiMCM paper",
     languages: ["LaTeX"],
     paperUrl: "https://github.com/big-oofff/himcm/blob/main/himcmpaper.pdf",
     repoUrl: "https://github.com/big-oofff/himcm",
@@ -134,9 +135,9 @@ const moreProjects = [
     type: "Animation Collection",
     description:
       "A collection of image and video animations produced with the Bézier renderer, Desmos, and an FFmpeg workflow.",
-    image:
-      "https://opengraph.githubassets.com/1/big-oofff/Desmos-Animations",
-    imageAlt: "GitHub preview for the Desmos animations collection",
+    video:
+      "https://raw.githubusercontent.com/big-oofff/Desmos-Animations/main/venator.mp4",
+    imageAlt: "Venator animation rendered with Bézier curves in Desmos",
     languages: ["Markdown"],
     repoUrl: "https://github.com/big-oofff/Desmos-Animations",
   },
@@ -157,8 +158,18 @@ const moreProjects = [
     type: "Programming Collection",
     description:
       "A growing collection of small Python programs, including tic-tac-toe, Hangman, sliding puzzles, ciphers, and utilities.",
-    image: "/project-images/school-projects.svg",
-    imageAlt: "Illustration representing Python games and school projects",
+    imageAlt: "Source preview from the tic-tac-toe game",
+    codeLabel: "tictactoe.py",
+    codeLines: [
+      "def display_board(board):",
+      "    print(f\"\"\"",
+      "     {board[0]} | {board[1]} | {board[2]}",
+      "    -----------",
+      "     {board[3]} | {board[4]} | {board[5]}",
+      "    -----------",
+      "     {board[6]} | {board[7]} | {board[8]}",
+      "    \"\"\")",
+    ],
     languages: ["Python"],
     repoUrl: "https://github.com/big-oofff/school-projects",
   },
@@ -166,9 +177,18 @@ const moreProjects = [
     title: "Tetris Web App",
     type: "Game Prototype",
     description:
-      "A lightweight browser-based Tetris project built as an early experiment with Dart and Flutter for the web.",
-    image: "https://opengraph.githubassets.com/1/big-oofff/tetris",
-    imageAlt: "GitHub preview for the Tetris web application",
+      "A lightweight browser-based Tetris project built as an early experiment with Dart's web tooling.",
+    imageAlt: "Source preview from the Tetris web application",
+    codeLabel: "web/index.html",
+    codeLines: [
+      "<title>tetris</title>",
+      "<link rel=\"stylesheet\" href=\"styles.css\">",
+      "<script defer src=\"main.dart.js\"></script>",
+      "",
+      "<body>",
+      "  <div id=\"output\"></div>",
+      "</body>",
+    ],
     languages: ["Dart"],
     repoUrl: "https://github.com/big-oofff/tetris",
   },
@@ -177,8 +197,17 @@ const moreProjects = [
     type: "API Exploration",
     description:
       "Small Python scripts for requesting Clash Royale card data and parsing player-response JSON.",
-    image: "https://opengraph.githubassets.com/1/big-oofff/clashai",
-    imageAlt: "GitHub preview for the Clash Royale API experiment",
+    imageAlt: "Source preview from the Clash Royale player-data script",
+    codeLabel: "jsonplayerresponse.py",
+    codeLines: [
+      "response = requests.get(url, headers=headers)",
+      "data = json.loads(response.text)",
+      "",
+      "trophies = data['trophies']",
+      "clan_name = data['clan']['name']",
+      "",
+      "print(f'Player has {trophies} trophies')",
+    ],
     languages: ["Python"],
     repoUrl: "https://github.com/big-oofff/clashai",
   },
@@ -206,23 +235,69 @@ function LanguageBadge({ language }) {
   );
 }
 
+function ProjectVisual({ project }) {
+  let visual;
+
+  if (project.video) {
+    visual = (
+      <video
+        src={project.video}
+        aria-label={project.imageAlt}
+        muted
+        autoPlay
+        loop
+        playsInline
+        preload="metadata"
+      />
+    );
+  } else if (project.codeLines) {
+    visual = (
+      <div className="project-code-snapshot" role="img" aria-label={project.imageAlt}>
+        <div className="code-snapshot-header">
+          <span className="code-window-dots" aria-hidden="true">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+          <span>{project.codeLabel}</span>
+        </div>
+        <pre>
+          <code>{project.codeLines.join("\n")}</code>
+        </pre>
+      </div>
+    );
+  } else {
+    visual = (
+      <img
+        src={imageSource(project.image)}
+        alt={project.imageAlt}
+        loading="lazy"
+        onError={(event) => {
+          event.currentTarget.style.display = "none";
+        }}
+      />
+    );
+  }
+
+  return (
+    <div
+      className={`portfolio-project-image ${
+        project.codeLines ? "code-project-image" : ""
+      }`}
+    >
+      {visual}
+      <span className="project-type-label">{project.type}</span>
+    </div>
+  );
+}
+
 function ProjectCard({ project, theme, paper }) {
   return (
     <article
       className={`portfolio-project-card ${paper ? "paper-card" : "build-card"}`}
       style={{ backgroundColor: theme.highlight }}
     >
-      <div className="portfolio-project-image">
-        <img
-          src={imageSource(project.image)}
-          alt={project.imageAlt}
-          loading="lazy"
-          onError={(event) => {
-            event.currentTarget.style.display = "none";
-          }}
-        />
-        <span className="project-type-label">{project.type}</span>
-      </div>
+      <ProjectVisual project={project} />
       <div className="portfolio-project-copy">
         <h3 style={{ color: theme.text }}>{project.title}</h3>
         <p style={{ color: theme.secondaryText }}>{project.description}</p>

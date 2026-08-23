@@ -152,8 +152,78 @@
   transition: transform 240ms ease;
 }
 
+.portfolio-project-image video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  background: #10131f;
+}
+
 .portfolio-project-card:hover .portfolio-project-image img {
   transform: scale(1.025);
+}
+
+.code-project-image {
+  background: #111521;
+}
+
+.project-code-snapshot {
+  width: 100%;
+  height: 100%;
+  color: #dce3f6;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(126, 132, 250, 0.2), transparent 34%),
+    #111521;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+.code-snapshot-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 42px;
+  padding: 0 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  color: #aeb8d0;
+  background: rgba(255, 255, 255, 0.025);
+  font-size: 12px;
+}
+
+.code-window-dots {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.code-window-dots i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7e84fa;
+}
+
+.code-window-dots i:nth-child(2) {
+  opacity: 0.68;
+}
+
+.code-window-dots i:nth-child(3) {
+  opacity: 0.38;
+}
+
+.project-code-snapshot pre {
+  margin: 0;
+  padding: 24px 24px 54px;
+  overflow: hidden;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.72;
+  text-align: left;
+  white-space: pre;
+}
+
+.project-code-snapshot code {
+  color: inherit;
+  font-family: inherit;
 }
 
 .project-type-label {
