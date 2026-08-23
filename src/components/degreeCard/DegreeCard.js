@@ -2,13 +2,25 @@ import React, { Component } from "react";
 import "./DegreeCard.css";
 import { Fade, Flip } from "react-reveal";
 
+function resolveLogo(logoPath) {
+  if (!logoPath) return null;
+
+  try {
+    return require(`../../assets/images/${logoPath}`);
+  } catch (error) {
+    return null;
+  }
+}
+
 class DegreeCard extends Component {
   render() {
     const degree = this.props.degree;
     const theme = this.props.theme;
+    const logo = resolveLogo(degree.logo_path);
+
     return (
       <div className="degree-card">
-        {degree.logo_path && (
+        {logo && (
           <Flip left duration={2000}>
             <div className="card-img">
               <img
@@ -17,7 +29,7 @@ class DegreeCard extends Component {
                   maxHeight: "100%",
                   transform: "scale(0.9)",
                 }}
-                src={require(`../../assets/images/${degree.logo_path}`)}
+                src={logo}
                 alt={degree.alt_name}
               />
             </div>
@@ -26,7 +38,7 @@ class DegreeCard extends Component {
         <Fade right duration={2000} distance="40px">
           <div
             className="card-body"
-            style={{ width: degree.logo_path ? "90%" : "100%" }}
+            style={{ width: logo ? "90%" : "100%" }}
           >
             <div
               className="body-header"
@@ -47,9 +59,13 @@ class DegreeCard extends Component {
               </div>
             </div>
             <div className="body-content">
-              {degree.descriptions.map((sentence) => {
+              {degree.descriptions.map((sentence, index) => {
                 return (
-                  <p className="content-list" style={{ color: theme.text }}>
+                  <p
+                    key={`${degree.title}-${index}`}
+                    className="content-list"
+                    style={{ color: theme.text }}
+                  >
                     {sentence}
                   </p>
                 );
