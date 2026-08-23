@@ -23,7 +23,7 @@ const greeting = {
   title: "Thomas Xiao",
   logo_name: "ThomasXiao",
   nickname: "肖舜齐",
-  subTitle: "I study applied math and spend a lot of my free time coding, researching random questions, and building things.",
+  subTitle: "Hi, I'm Thomas! I study applied math and spend a lot of my free time coding, chasing random research questions, and building things.",
   resumeLink:
     "/Thomas-Xiao-Resume.pdf",
   resume:
@@ -79,7 +79,7 @@ const skills = {
       title: "Mathematics",
       fileName: "DataScienceImg",
       skills: [
-        "- Most of my math projects start with a question I don't know how to answer yet.",
+        "- Most of my math projects start with a question I don't know how to answer yet. That's the fun part!",
         "- My HiMCM team earned an Honorable Mention, placing in the top 28% of 1,055 teams.",
         "- I also placed 2nd at both the USC SCMC Math Competition and CSULB Math Day at the Beach.",
       ],
@@ -127,7 +127,7 @@ const skills = {
       skills: [
         "- I use Python for most of my research and data projects, usually with NumPy, pandas, and Matplotlib.",
         "- I helped run Beckman's Computer Science Club and taught algorithms and data structures to 15+ students.",
-        "- I build interactive things for fun, including a real-time Desmos Bezier renderer and this site.",
+        "- I build interactive things for fun, including a real-time Desmos Bezier renderer and this site!",
         "- I have also competed in USACO, ACSL, and CALICO.",
       ],
       softwareSkills: [
@@ -413,7 +413,7 @@ const degrees = {
       alt_name: "CMU",
       duration: "2026 - 2030",
       descriptions: [
-        "I'm studying Applied Mathematics at Carnegie Mellon. I plan to focus on quantitative research and scientific computing.",
+        "I'm studying Applied Mathematics at Carnegie Mellon. I'm excited to dig further into quantitative research and scientific computing!",
       ],
       website_link: "https://www.cmu.edu/",
     },
@@ -729,14 +729,14 @@ const experience = {
 const projectsHeader = {
   title: "Things I've Built and Researched",
   description:
-    "These are some papers, coding projects, and experiments I've worked on. Click a project to see the code, figures, or write-up.",
+    "These are some papers, coding projects, and experiments I've worked on. Click one to see the code, figures, or write-up!",
   avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
   title: "A Few More Things",
   description:
-    "Some smaller projects I made for school or for fun.",
+    "Some smaller projects I made for school or just for fun!",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -760,7 +760,7 @@ const contactPageData = {
     title: "Say Hello",
     profile_image_path: "pfp2.png",
     description:
-      "Hi, I'm Thomas. I'm a student at CMU studying applied math. If you want to talk about one of my projects, email is the best way to reach me.",
+      "Hi, I'm Thomas! I'm studying Applied Mathematics at Carnegie Mellon, and I spend a lot of my time jumping between math problems, research ideas, and coding projects. Lately, I've worked on climate data, board-game research, and animations in Desmos. I also tutor, teach programming, and still enjoy a good debate. If you want to talk about a project or just say hi, email is the best way to reach me!",
   },
   blogSection: {
     title: "",
