@@ -10,11 +10,11 @@ const settings = {
 //SEO Related settings
 const seo = {
   title: "Thomas's Portfolio",
-  description: "A math one-trick",
+  description: "Applied Mathematics student at Carnegie Mellon University focused on quantitative research, scientific computing, and data-driven modeling.",
   og: {
     title: "Thomas Xiao Portfolio",
     type: "website",
-    url: "http://thomasxiao.com/",
+    url: "https://thomasxiao.org/",
   },
 };
 
@@ -23,11 +23,11 @@ const greeting = {
   title: "Thomas Xiao",
   logo_name: "ThomasXiao",
   nickname: "肖舜齐",
-  subTitle: "a 16 year old math student",
+  subTitle: "Applied Mathematics student at Carnegie Mellon University focused on quantitative research, scientific computing, and AI.",
   resumeLink:
-    "https://drive.google.com/file/d/1J5wbPJGGR_1TVwbLZsDkIV4eIESfx8YV/view?usp=sharing",
+    "/Thomas-Xiao-Resume.pdf",
   resume:
-    "https://drive.google.com/file/d/1J5wbPJGGR_1TVwbLZsDkIV4eIESfx8YV/view?usp=sharing",
+    "/Thomas-Xiao-Resume.pdf",
   githubProfile: "https://github.com/big-oofff",
 };
 
@@ -42,7 +42,7 @@ const socialMediaLinks = [
   // instagram: "https://www.instagram.com/layman_brother/"
 
   {
-    name: "Github",
+    name: "GitHub",
     link: "https://github.com/big-oofff",
     fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
     backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
@@ -53,12 +53,6 @@ const socialMediaLinks = [
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
-  {
-    name: "Discord",
-    link: "https://discordapp.com/users/649464486046203904",
-    fontAwesomeIcon: "fa-discord", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
-    backgroundColor: "#7289DA", // Reference https://simpleicons.org/?q=linkedin
-  },
   // {
   //   name: "YouTube",
   //   link: "https://youtube.com/c/3Blue1Brown",
@@ -67,15 +61,9 @@ const socialMediaLinks = [
   // },
   {
     name: "Gmail",
-    link: "mailto:secondbreakfest@gmail.com",
+    link: "mailto:thomasxi@andrew.cmu.edu",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
-  },
-  {
-    name: "X-Twitter",
-    link: "https://twitter.com/bestdynaNA",
-    fontAwesomeIcon: "fa-x-twitter", // Reference https://fontawesome.com/icons/x-twitter?f=brands&s=solid
-    backgroundColor: "#000000", // Reference https://simpleicons.org/?q=x
   },
   // {
   //   name: "Facebook",
@@ -83,12 +71,6 @@ const socialMediaLinks = [
   //   fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
   //   backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
   // },
-  {
-    name: "Instagram",
-    link: "https://www.instagram.com/2100pol/",
-    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
-  },
 ];
 
 const skills = {
@@ -97,9 +79,9 @@ const skills = {
       title: "Mathematics",
       fileName: "DataScienceImg",
       skills: [
-        "- Experience in advanced mathematics including calculus, linear algebra, and differential equations",
-        "- Attended modeling competitions like HiMCM and the M3 Challenge",
-        "- Competitive math experience in AMC, SMT, and BMT",
+        "- Applied mathematics coursework spanning calculus, linear algebra, differential equations, probability, and statistics",
+        "- HiMCM Honorable Mention (top 28% of 1,055 teams) for mathematical modeling",
+        "- 2nd Place at the USC SCMC Math Competition and CSULB Math Day at the Beach",
       ],
       softwareSkills: [
         {
@@ -143,14 +125,14 @@ const skills = {
       title: "Programming",
       fileName: "DesignImg",
       skills: [
-        "- Experience using python libraries to develop statistical models and web design",
-        "- Program integration with Desmos to produce animations in real-time",
-        "- Use of graphing and mathematical sofware to produce analysis",
-        "- Attended programming competitions like USACO, ACSL, and CALICO",
+        "- Build statistical and scientific-computing workflows in Python using NumPy, pandas, and Matplotlib",
+        "- Board and Program Lead for Beckman Computer Science Club; taught algorithms and data structures to 15+ students",
+        "- Built interactive projects including a real-time Desmos Bezier renderer and this React portfolio",
+        "- Competition experience in USACO, ACSL, and CALICO",
       ],
       softwareSkills: [
         {
-          skillName: "Matlab",
+          skillName: "MATLAB",
           fontAwesomeClassname: "material-icon-theme:matlab",
           style: {
             backgroundColor: "transparent",
@@ -172,7 +154,7 @@ const skills = {
           },
         },
         {
-          skillName: "Geogebra",
+          skillName: "GeoGebra",
           fontAwesomeClassname: "arcticons:geogebra",
           style: {
             backgroundColor: "transparent",
@@ -233,9 +215,9 @@ const skills = {
       title: "Speech and Debate",
       fileName: "FullStackImg",
       skills: [
-        "- Experience in Parliamentary and Lincoln-Douglas debate at tournaments like Stanford and Berkeley",
-        "- Southern California and national circuit debater",
-        "- 2022 National Online Forensics Champion",
+        "- Parliamentary and Lincoln-Douglas debater on the Southern California and national circuits (2019-2023)",
+        "- 1st Place Speaker in Lincoln-Douglas Debate at the NSDA Stanford Invitational",
+        "- 2022 National Online Forensics Parliamentary Debate Champion; led practices for 10+ peers",
       ],
       softwareSkills: [
         {
@@ -425,7 +407,18 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
-      title: "Johns Hopkins University Center of Talented Youth",
+      title: "Carnegie Mellon University",
+      subtitle: "B.S. in Applied Mathematics",
+      logo_path: "cmu.png",
+      alt_name: "CMU",
+      duration: "2026 - 2030",
+      descriptions: [
+        "I am an Applied Mathematics undergraduate at Carnegie Mellon University, expected to graduate in 2030. My interests include quantitative research, scientific computing, mathematical modeling, and data-driven methods for real-world problems.",
+      ],
+      website_link: "https://www.cmu.edu/",
+    },
+    {
+      title: "Johns Hopkins University Center for Talented Youth",
       subtitle: "Multivariable Calculus",
       logo_path: "cty2.png",
       alt_name: "CTY",
@@ -437,10 +430,10 @@ const degrees = {
     },
     {
       title: "Irvine Valley College",
-      subtitle: "Precalculus, Linear Algebra",
+      subtitle: "Precalculus and Linear Algebra",
       logo_path: "ivc2.png",
       alt_name: "IVC",
-      duration: "2023 - 2024",
+      duration: "2023 - 2025",
       descriptions: [
         "I have studied Precalculus over the summer of 2023, in order to prepare for AP Calculus BC in the upcoming school year.",
         "I have studied Linear Algebra over the fall semester of 2024, where I learned about vector spaces, linear transformations, and matrix algebra.",
@@ -449,12 +442,12 @@ const degrees = {
     },
     {
       title: "Arnold O. Beckman High School",
-      subtitle: "Current enrolled high school",
+      subtitle: "High School Diploma",
       logo_path: "beckman.png",
       alt_name: "Beckman",
       duration: "2022 - 2026",
       descriptions: [
-        "I have enrolled in various classes, including AP Calculus BC, AP Physics C, and AP Computer Science A, classes with an emphasis on STEM education.",
+        "Completed a rigorous STEM curriculum including AP Calculus BC, AP Physics 1, AP Statistics, and AP Computer Science Principles.",
       ],
       website_link: "https://beckman.tustin.k12.ca.us",
     },
@@ -734,16 +727,16 @@ const experience = {
 
 // Projects Page
 const projectsHeader = {
-  title: "Projects",
+  title: "Research & Technical Projects",
   description:
-    "My projects are usually just long unpublished papers that I spent way too much time on, either for class or for competitions. However, there are some niche projects that I think are pretty cool.",
+    "Selected research, modeling papers, and technical projects. Open each project for its code, paper, figures, or supporting materials.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
-  title: "Interesting Stuff",
+  title: "More Projects",
   description:
-    "Here's some stuff that wasn't necessarily a project, but I think is worth sharing. Click on each one to see more details.",
+    "Additional software and mathematical projects, each linked to its code, demo, or supporting materials.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -767,7 +760,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "pfp2.png",
     description:
-      "I am available on these platforms, linked on the icons. You can reach out to me, preferably by email, and I will try to reply within 24 hours.",
+      "I am an Applied Mathematics student at Carnegie Mellon University interested in quantitative research, scientific computing, and the intersection of mathematical modeling and AI. My work includes climate time-series analysis, consumer-behavior research, interactive mathematical software, tutoring, and competitive debate. The best way to reach me is by email.",
   },
   blogSection: {
     title: "",
@@ -776,20 +769,19 @@ const contactPageData = {
     avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
-    title: "Address",
-    subtitle: "80 Purple Jasmine, Irvine, CA, USA 92620",
+    title: "Location",
+    subtitle: "Irvine, CA",
     locality: "Irvine",
     country: "USA",
     region: "California",
-    postalCode: "92620",
-    streetAddress: "80 Purple Jasmine",
+    postalCode: "",
+    streetAddress: "",
     avatar_image_path: "address_image.svg",
-    location_map_link:
-      "https://www.google.com/maps/place/80+Purple+Jasmine,+Irvine,+CA+92620/@33.6879264,-117.7550379,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcdd585ea87395:0x1b02e812bb471cf2!8m2!3d33.687922!4d-117.752463!16s%2Fg%2F11rzjllk0g?entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoASAFQAw%3D%3D",
+    location_map_link: "https://www.google.com/maps/place/Irvine,+CA",
   },
   phoneSection: {
-    title: "Phone Number",
-    subtitle: "949-337-8548",
+    title: "",
+    subtitle: "",
   },
 };
 
