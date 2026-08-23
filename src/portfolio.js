@@ -1,7 +1,5 @@
 /* Change this file to get your personal Porfolio */
 
-import Experience from "./pages/experience/Experience";
-
 // Website related settings
 const settings = {
   isSplash: false, // Change this to false if you don't want Splash screen.
