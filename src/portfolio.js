@@ -23,7 +23,7 @@ const greeting = {
   title: "Thomas Xiao",
   logo_name: "ThomasXiao",
   nickname: "肖舜齐",
-  subTitle: "Hi, I'm Thomas! I study applied math and spend a lot of my free time coding, chasing random research questions, and building things.",
+  subTitle: "Hi, I'm Thomas! I study applied math at Carnegie Mellon and like problems that sit somewhere between a proof and an argument - whether I'm digging through climate data, building something in Desmos, teaching code, or getting way too invested in a debate round.",
   resumeLink:
     "/Thomas-Xiao-Resume.pdf",
   resume:
@@ -79,7 +79,7 @@ const skills = {
       title: "Mathematics",
       fileName: "DataScienceImg",
       skills: [
-        "- Most of my math projects start with a question I don't know how to answer yet. That's the fun part!",
+        "- I like math most when it starts with a question I can't answer right away. Those questions have turned into research projects, competition models, and plenty of long conversations on walks with my dad and Sage!",
         "- My HiMCM team earned an Honorable Mention, placing in the top 28% of 1,055 teams.",
         "- I also placed 2nd at both the USC SCMC Math Competition and CSULB Math Day at the Beach.",
       ],
@@ -125,9 +125,9 @@ const skills = {
       title: "Programming",
       fileName: "DesignImg",
       skills: [
-        "- I use Python for most of my research and data projects, usually with NumPy, pandas, and Matplotlib.",
+        "- I mostly use Python for research and data projects, usually with NumPy, pandas, and Matplotlib.",
         "- I helped run Beckman's Computer Science Club and taught algorithms and data structures to 15+ students.",
-        "- I build interactive things for fun, including a real-time Desmos Bezier renderer and this site!",
+        "- I also like building things I can see and play with, including a real-time Desmos Bezier renderer and this site!",
         "- I have also competed in USACO, ACSL, and CALICO.",
       ],
       softwareSkills: [
@@ -216,6 +216,7 @@ const skills = {
       fileName: "FullStackImg",
       skills: [
         "- I spent four years in Parliamentary and Lincoln-Douglas debate on the Southern California and national circuits.",
+        "- Debate taught me how to turn a messy idea into a clear argument, explain it under pressure, and actually listen when someone pushes back.",
         "- I won 1st Place Speaker in Lincoln-Douglas Debate at the NSDA Stanford Invitational.",
         "- I was also the 2022 National Online Forensics Parliamentary Debate Champion and helped lead practice for 10+ teammates.",
       ],
@@ -413,7 +414,7 @@ const degrees = {
       alt_name: "CMU",
       duration: "2026 - 2030",
       descriptions: [
-        "I'm studying Applied Mathematics at Carnegie Mellon. I'm excited to dig further into quantitative research and scientific computing!",
+        "I'm studying Applied Mathematics at Carnegie Mellon and exploring quantitative research and scientific computing - especially work that connects strong models with clear explanations!",
       ],
       website_link: "https://www.cmu.edu/",
     },
@@ -729,14 +730,14 @@ const experience = {
 const projectsHeader = {
   title: "Things I've Built and Researched",
   description:
-    "These are some papers, coding projects, and experiments I've worked on. Click one to see the code, figures, or write-up!",
+    "A mix of papers, coding projects, and experiments that started with questions I wanted to chase. Click one to see the code, figures, or write-up!",
   avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
   title: "A Few More Things",
   description:
-    "Some smaller projects I made for school or just for fun!",
+    "Smaller projects I made for school, competitions, or just because they sounded fun!",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -760,7 +761,7 @@ const contactPageData = {
     title: "Say Hello",
     profile_image_path: "pfp2.png",
     description:
-      "Hi, I'm Thomas! I'm studying Applied Mathematics at Carnegie Mellon, and I spend a lot of my time jumping between math problems, research ideas, and coding projects. Lately, I've worked on climate data, board-game research, and animations in Desmos. I also tutor, teach programming, and still enjoy a good debate. If you want to talk about a project or just say hi, email is the best way to reach me!",
+      "Hi, I'm Thomas! I'm studying Applied Mathematics at Carnegie Mellon, but I rarely stay in one lane for long. I like working through math problems, digging into weird data questions, building interactive code, and figuring out how to explain an idea clearly enough that someone else wants to keep listening. That thread shows up in a lot of what I do: I've studied long-term patterns in climate data, researched what makes board games work, built animations in Desmos, taught programming, tutored math, and spent four years in debate. To me, the fun part is not just finding an answer - it's turning it into something useful, visual, or understandable. Away from my laptop, I'm usually biking, lifting, playing strategy games, walking Sage, or catching up with friends. If you want to talk about a project, math, or anything interesting, feel free to email me!",
   },
   blogSection: {
     title: "",
