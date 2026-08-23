@@ -23,7 +23,7 @@ const greeting = {
   title: "Thomas Xiao",
   logo_name: "ThomasXiao",
   nickname: "肖舜齐",
-  subTitle: "Hi, I'm Thomas! I study applied math at Carnegie Mellon and like problems that sit somewhere between a proof and an argument - whether I'm digging through climate data, building something in Desmos, teaching code, or getting way too invested in a debate round.",
+  subTitle: "Hi, I'm Thomas! I study applied math at Carnegie Mellon and enjoy research, coding projects, and interesting problems.",
   resumeLink:
     "/Thomas-Xiao-Resume.pdf",
   resume:
@@ -79,7 +79,7 @@ const skills = {
       title: "Mathematics",
       fileName: "DataScienceImg",
       skills: [
-        "- I like math most when it starts with a question I can't answer right away. Those questions have turned into research projects, competition models, and plenty of long conversations on walks with my dad and Sage!",
+        "- I like math most when it starts with a question I can't answer right away. Those questions often turn into research projects, competition models, or new things to build!",
         "- My HiMCM team earned an Honorable Mention, placing in the top 28% of 1,055 teams.",
         "- I also placed 2nd at both the USC SCMC Math Competition and CSULB Math Day at the Beach.",
       ],
@@ -761,7 +761,7 @@ const contactPageData = {
     title: "Say Hello",
     profile_image_path: "pfp2.png",
     description:
-      "Hi, I'm Thomas! I'm studying Applied Mathematics at Carnegie Mellon, but I rarely stay in one lane for long. I like working through math problems, digging into weird data questions, building interactive code, and figuring out how to explain an idea clearly enough that someone else wants to keep listening. That thread shows up in a lot of what I do: I've studied long-term patterns in climate data, researched what makes board games work, built animations in Desmos, taught programming, tutored math, and spent four years in debate. To me, the fun part is not just finding an answer - it's turning it into something useful, visual, or understandable. Away from my laptop, I'm usually biking, lifting, playing strategy games, walking Sage, or catching up with friends. If you want to talk about a project, math, or anything interesting, feel free to email me!",
+      "Hi, I'm Thomas! I'm studying Applied Mathematics at Carnegie Mellon. I enjoy moving between math problems, research questions, and coding projects, especially when I can turn an idea into something clear and useful. I've worked with climate data, researched board games, built animations in Desmos, taught programming, tutored math, and competed in debate. If you want to talk about a project or just say hi, email is the best way to reach me!",
   },
   blogSection: {
     title: "",
