@@ -9,7 +9,15 @@ export default function Footer(props) {
     <div className="footer-div">
       <Fade>
         <p className="footer-text" style={{ color: props.theme.secondaryText }}>
-          Built by {greeting.title} with React. Original template by{" "}\n          <a\n            href="https://github.com/ashutosh1919"\n            target="_blank"\n            rel="noopener noreferrer"\n          >\n            ashutosh1919\n          </a>\n          .
+          Built by {greeting.title} with React. Original template by{" "}
+          <a
+            href="https://github.com/ashutosh1919"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ashutosh1919
+          </a>
+          .
         </p>
         {/* <ToggleSwitch theme={props.theme} onToggle={props.onToggle}/> */}
       </Fade>
