@@ -10,7 +10,7 @@ const settings = {
 //SEO Related settings
 const seo = {
   title: "Thomas's Portfolio",
-  description: "A small corner of the internet for Thomas Xiao's math, code, research, and other things he finds interesting.",
+  description: "Thomas Xiao's personal site for math, code, research, and projects.",
   og: {
     title: "Thomas Xiao Portfolio",
     type: "website",
@@ -23,7 +23,7 @@ const greeting = {
   title: "Thomas Xiao",
   logo_name: "ThomasXiao",
   nickname: "肖舜齐",
-  subTitle: "I like using math, code, and data to figure out how things work - and to build things that are actually useful.",
+  subTitle: "I study applied math and spend a lot of my free time coding, researching random questions, and building things.",
   resumeLink:
     "/Thomas-Xiao-Resume.pdf",
   resume:
@@ -79,7 +79,7 @@ const skills = {
       title: "Mathematics",
       fileName: "DataScienceImg",
       skills: [
-        "- I like taking messy questions and turning them into models I can test, visualize, and explain.",
+        "- Most of my math projects start with a question I don't know how to answer yet.",
         "- My HiMCM team earned an Honorable Mention, placing in the top 28% of 1,055 teams.",
         "- I also placed 2nd at both the USC SCMC Math Competition and CSULB Math Day at the Beach.",
       ],
@@ -125,7 +125,7 @@ const skills = {
       title: "Programming",
       fileName: "DesignImg",
       skills: [
-        "- Python is my usual toolbox - NumPy, pandas, and Matplotlib do most of the heavy lifting.",
+        "- I use Python for most of my research and data projects, usually with NumPy, pandas, and Matplotlib.",
         "- I helped run Beckman's Computer Science Club and taught algorithms and data structures to 15+ students.",
         "- I build interactive things for fun, including a real-time Desmos Bezier renderer and this site.",
         "- I have also competed in USACO, ACSL, and CALICO.",
@@ -216,7 +216,7 @@ const skills = {
       fileName: "FullStackImg",
       skills: [
         "- I spent four years in Parliamentary and Lincoln-Douglas debate on the Southern California and national circuits.",
-        "- Along the way, I won 1st Place Speaker in Lincoln-Douglas Debate at the NSDA Stanford Invitational.",
+        "- I won 1st Place Speaker in Lincoln-Douglas Debate at the NSDA Stanford Invitational.",
         "- I was also the 2022 National Online Forensics Parliamentary Debate Champion and helped lead practice for 10+ teammates.",
       ],
       softwareSkills: [
@@ -413,7 +413,7 @@ const degrees = {
       alt_name: "CMU",
       duration: "2026 - 2030",
       descriptions: [
-        "I'm heading to Carnegie Mellon to study Applied Mathematics. I'm especially curious about quantitative research, scientific computing, and what happens when good math meets real-world data.",
+        "I'm studying Applied Mathematics at Carnegie Mellon. I plan to focus on quantitative research and scientific computing.",
       ],
       website_link: "https://www.cmu.edu/",
     },
@@ -729,14 +729,14 @@ const experience = {
 const projectsHeader = {
   title: "Things I've Built and Researched",
   description:
-    "A mix of papers, code experiments, and projects I made because I wanted to see if an idea would work. Click around for the code, figures, and write-ups.",
+    "These are some papers, coding projects, and experiments I've worked on. Click a project to see the code, figures, or write-up.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
   title: "A Few More Things",
   description:
-    "Smaller experiments and side projects, with links to the code, demos, and notes.",
+    "Some smaller projects I made for school or for fun.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -760,7 +760,7 @@ const contactPageData = {
     title: "Say Hello",
     profile_image_path: "pfp2.png",
     description:
-      "Hi, I'm Thomas. I like math, code, research, and making complicated ideas easier to understand. If you want to talk about a project, research, or something interesting, email is the best way to reach me.",
+      "Hi, I'm Thomas. I'm a student at CMU studying applied math. If you want to talk about one of my projects, email is the best way to reach me.",
   },
   blogSection: {
     title: "",
