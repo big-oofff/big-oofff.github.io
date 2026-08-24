@@ -19,10 +19,21 @@ export default class FullStackImg extends Component {
           className="berkeley-home-card berkeley-home-card-main"
           style={cardStyle}
         >
-          <img
-            src={`${publicPath}/experience-images/berkeley-team.svg`}
-            alt="Thomas with his debate team inside Dwinelle Hall at UC Berkeley"
-          />
+          <div className="berkeley-home-photo-grid">
+            <div className="berkeley-home-photo-frame berkeley-home-photo-team">
+              <img
+                src={`${publicPath}/experience-images/berkeley-team.svg`}
+                alt="Thomas with his debate team inside Dwinelle Hall at UC Berkeley"
+              />
+            </div>
+            <div className="berkeley-home-photo-frame berkeley-home-photo-reset">
+              <img
+                src={`${publicPath}/experience-images/berkeley-between-rounds.svg`}
+                alt="Thomas taking a lighthearted break between debate rounds at Berkeley"
+                loading="lazy"
+              />
+            </div>
+          </div>
           <figcaption>
             <strong style={{ color: theme.text }}>Our Berkeley team</strong>
             <span style={{ color: theme.secondaryText }}>
@@ -32,17 +43,6 @@ export default class FullStackImg extends Component {
           </figcaption>
         </figure>
 
-        <figure
-          className="berkeley-home-card berkeley-home-card-overlap"
-          style={cardStyle}
-          aria-label="A lighthearted reset between debate rounds at Berkeley"
-        >
-          <img
-            src={`${publicPath}/experience-images/berkeley-between-rounds.svg`}
-            alt="Thomas taking a lighthearted break between debate rounds at Berkeley"
-            loading="lazy"
-          />
-        </figure>
       </section>
     );
   }
