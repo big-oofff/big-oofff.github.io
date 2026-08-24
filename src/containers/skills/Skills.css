@@ -70,6 +70,173 @@
   border-radius: 50%;
 }
 
+.skills-image-div > .programming-showcase {
+  width: min(100%, 660px);
+  max-width: 100%;
+  height: auto;
+  margin: 74px auto 0;
+}
+
+.programming-showcase {
+  box-sizing: border-box;
+  padding: 11px;
+  overflow: hidden;
+  border: 1px solid;
+  border-radius: 22px;
+  box-shadow: 0 18px 44px rgba(20, 28, 58, 0.16);
+  outline: none;
+}
+
+.programming-showcase:focus-visible {
+  box-shadow: 0 0 0 4px rgba(29, 155, 163, 0.24),
+    0 18px 44px rgba(20, 28, 58, 0.16);
+}
+
+.programming-showcase-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #081f2a;
+}
+
+.programming-showcase-media {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  display: block;
+  object-fit: cover;
+  background: #f6fbfa;
+}
+
+.programming-showcase-nav {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(7, 31, 42, 0.76);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  font: 34px/1 "Google Sans Regular";
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.programming-showcase-nav:hover,
+.programming-showcase-nav:focus-visible {
+  background: rgba(7, 31, 42, 0.94);
+  transform: translateY(-50%) scale(1.06);
+}
+
+.programming-showcase-nav-left {
+  left: 12px;
+}
+
+.programming-showcase-nav-right {
+  right: 12px;
+}
+
+.programming-showcase-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 15px 7px 12px;
+}
+
+.programming-showcase-details h2 {
+  margin: 0 0 4px;
+  font-family: "Google Sans Medium";
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.programming-showcase-details p {
+  margin: 0;
+  font-family: "Google Sans Regular";
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.programming-showcase-meta {
+  min-width: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  font-family: "Google Sans Medium";
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.programming-showcase-meta a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.programming-showcase-meta a:hover,
+.programming-showcase-meta a:focus-visible {
+  text-decoration: underline;
+}
+
+.programming-showcase-strip {
+  display: flex;
+  gap: 8px;
+  padding: 4px 3px 3px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+}
+
+.programming-showcase-thumb {
+  width: 82px;
+  height: 58px;
+  position: relative;
+  flex: 0 0 auto;
+  padding: 2px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.programming-showcase-thumb:hover,
+.programming-showcase-thumb:focus-visible,
+.programming-showcase-thumb.is-active {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.programming-showcase-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.programming-showcase-play {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  inset: 50% auto auto 50%;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(7, 31, 42, 0.78);
+  font-size: 10px;
+  transform: translate(-50%, -50%);
+}
+
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
@@ -135,5 +302,42 @@
 
   .math-team-caption {
     font-size: 14px;
+  }
+
+  .skills-image-div > .programming-showcase {
+    width: calc(100% - 24px);
+    margin-top: 0;
+    padding: 8px;
+    border-radius: 18px;
+  }
+
+  .programming-showcase-frame {
+    border-radius: 12px;
+  }
+
+  .programming-showcase-details {
+    display: block;
+    padding: 13px 5px 10px;
+  }
+
+  .programming-showcase-details h2 {
+    font-size: 17px;
+  }
+
+  .programming-showcase-details p {
+    font-size: 13px;
+  }
+
+  .programming-showcase-meta {
+    margin-top: 9px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .programming-showcase-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 29px;
   }
 }
