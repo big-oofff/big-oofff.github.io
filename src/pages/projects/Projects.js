@@ -29,7 +29,7 @@ const featuredWork = [
     imageAlt: "Forecasted climate anomaly chart from Thomas Xiao's research",
     languages: ["Python", "LaTeX"],
     paperUrl:
-      "https://github.com/big-oofff/us-climate-harmonic-wavelet-analysis/blob/main/finalpaper.pdf",
+      "https://www.researchgate.net/publication/397430750_Detection_of_Temporal_Variability_in_US_Climate_Using_Harmonic_and_Wavelet_Decomposition",
     repoUrl:
       "https://github.com/big-oofff/us-climate-harmonic-wavelet-analysis",
   },
@@ -43,7 +43,7 @@ const featuredWork = [
       "Correlation heatmap from Thomas Xiao's BoardGameGeek research paper",
     languages: ["LaTeX"],
     paperUrl:
-      "https://github.com/big-oofff/board-game-analysis/blob/main/compiledanalysis.pdf",
+      "https://doi.org/10.54254/2753-8818/2025.DL25672",
     repoUrl: "https://github.com/big-oofff/board-game-analysis",
   },
   {
@@ -63,7 +63,7 @@ const featuredWork = [
     type: "Honorable Mention Paper",
     description:
       "Built and communicated a team mathematical model that earned Honorable Mention in the international HiMCM competition.",
-    image: "/project-images/himcm-paper.jpg",
+    image: "/project-images/himcm-paper.png",
     imageAlt:
       "Emissions comparison figure from Thomas Xiao's HiMCM paper",
     languages: ["LaTeX"],
@@ -326,14 +326,36 @@ function ProjectVisual({ project }) {
 }
 
 function ProjectCard({ project, theme, paper }) {
+  const primaryUrl = paper ? project.paperUrl : project.repoUrl;
+  const primaryLabel = paper
+    ? `Read ${project.title}`
+    : `View ${project.title} on GitHub`;
+
   return (
     <article
       className={`portfolio-project-card ${paper ? "paper-card" : "build-card"}`}
       style={{ backgroundColor: theme.highlight }}
     >
-      <ProjectVisual project={project} />
+      <a
+        className="project-visual-link"
+        href={primaryUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={primaryLabel}
+      >
+        <ProjectVisual project={project} />
+      </a>
       <div className="portfolio-project-copy">
-        <h3 style={{ color: theme.text }}>{project.title}</h3>
+        <h3 style={{ color: theme.text }}>
+          <a
+            className="project-title-link"
+            href={primaryUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {project.title}
+          </a>
+        </h3>
         <p style={{ color: theme.secondaryText }}>{project.description}</p>
         <div className="language-list" aria-label="Languages and tools">
           {project.languages.map((language) => (
