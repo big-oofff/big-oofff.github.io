@@ -5,6 +5,7 @@ const publicPath = process.env.PUBLIC_URL;
 const showcaseItems = [
   {
     title: "Desmos FFmpeg Animation",
+    thumbLabel: "FFmpeg",
     description: "An FFmpeg-assisted animation rendered frame by frame with Bézier curves.",
     type: "video",
     src: "https://github.com/user-attachments/assets/27ff7aa9-3f17-44bc-93db-a0c32bd37503",
@@ -13,6 +14,7 @@ const showcaseItems = [
   },
   {
     title: "D4DJ Desmos Render",
+    thumbLabel: "D4DJ",
     description: "A processed animation from my FFmpeg-to-Desmos workflow.",
     type: "video",
     src: "https://github.com/user-attachments/assets/9162eab0-5a35-4fe1-a684-9526ebcbb94d",
@@ -21,6 +23,7 @@ const showcaseItems = [
   },
   {
     title: "TIE Fighter Desmos Render",
+    thumbLabel: "TIE Fighter",
     description: "A video converted into frames, retimed, and rendered in Desmos.",
     type: "video",
     src: "https://github.com/user-attachments/assets/6852923c-c3c6-47d5-af07-fac5f6eb8748",
@@ -29,6 +32,7 @@ const showcaseItems = [
   },
   {
     title: "Venator Desmos Render",
+    thumbLabel: "Venator",
     description: "A longer FFmpeg-assisted animation experiment rendered as Desmos curves.",
     type: "video",
     src: "https://github.com/user-attachments/assets/ca53252e-fa93-4ed4-adbb-861dae18633d",
@@ -60,13 +64,20 @@ const showcaseItems = [
 
 export default function ProgrammingShowcase({ theme }) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [loadedVideoSrc, setLoadedVideoSrc] = useState(null);
   const activeItem = showcaseItems[activeIndex];
 
   const move = direction => {
+    setLoadedVideoSrc(null);
     setActiveIndex(
       current =>
         (current + direction + showcaseItems.length) % showcaseItems.length,
     );
+  };
+
+  const selectItem = index => {
+    setLoadedVideoSrc(null);
+    setActiveIndex(index);
   };
 
   const handleKeyDown = event => {
@@ -83,21 +94,31 @@ export default function ProgrammingShowcase({ theme }) {
   const renderMedia = item => {
     if (item.type === "video") {
       return (
-        <video
-          key={item.src}
-          className="programming-showcase-media"
-          autoPlay
-          muted
-          loop
-          playsInline
-          controls
-          preload="metadata"
-          poster={item.poster}
-          aria-label={item.title}
-        >
-          <source src={item.src} />
-          Your browser does not support embedded video.
-        </video>
+        <React.Fragment key={item.src}>
+          <video
+            className={`programming-showcase-media programming-showcase-video${
+              loadedVideoSrc === item.src ? " is-ready" : " is-loading"
+            }`}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            preload="auto"
+            onLoadedData={() => setLoadedVideoSrc(item.src)}
+            onCanPlay={() => setLoadedVideoSrc(item.src)}
+            aria-label={item.title}
+          >
+            <source src={item.src} />
+            Your browser does not support embedded video.
+          </video>
+          {loadedVideoSrc !== item.src && (
+            <div className="programming-showcase-loading" role="status">
+              <span className="programming-showcase-loading-dot" />
+              Loading animation…
+            </div>
+          )}
+        </React.Fragment>
       );
     }
 
@@ -182,13 +203,16 @@ export default function ProgrammingShowcase({ theme }) {
               borderColor:
                 index === activeIndex ? theme.imageHighlight : "transparent",
             }}
-            onClick={() => setActiveIndex(index)}
+            onClick={() => selectItem(index)}
           >
-            <img
-              src={item.type === "video" ? item.poster : item.src}
-              alt=""
-              loading="lazy"
-            />
+            {item.type === "video" ? (
+              <span className="programming-showcase-video-thumb" aria-hidden="true">
+                <small>Bézier video</small>
+                <strong>{item.thumbLabel}</strong>
+              </span>
+            ) : (
+              <img src={item.src} alt="" loading="lazy" />
+            )}
             {item.type === "video" && (
               <span className="programming-showcase-play" aria-hidden="true">
                 ▶
