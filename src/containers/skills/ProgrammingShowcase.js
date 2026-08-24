@@ -4,12 +4,11 @@ const publicPath = process.env.PUBLIC_URL;
 
 const showcaseItems = [
   {
-    title: "Desmos FFmpeg Animation",
-    thumbLabel: "FFmpeg",
-    description: "An FFmpeg-assisted animation rendered frame by frame with Bézier curves.",
+    title: "One Punch Man Desmos Render",
+    thumbLabel: "OPM",
+    description: "A high-curve-density animation processed through my FFmpeg-to-Desmos workflow.",
     type: "video",
-    src: "https://github.com/user-attachments/assets/27ff7aa9-3f17-44bc-93db-a0c32bd37503",
-    poster: `${publicPath}/project-images/desmos-renderer.png`,
+    src: "https://github.com/user-attachments/assets/71935b3b-57f5-4e83-b7d3-617e05c6a11f",
     href: "https://github.com/big-oofff/Desmos-Animations",
   },
   {
@@ -18,7 +17,6 @@ const showcaseItems = [
     description: "A processed animation from my FFmpeg-to-Desmos workflow.",
     type: "video",
     src: "https://github.com/user-attachments/assets/9162eab0-5a35-4fe1-a684-9526ebcbb94d",
-    poster: `${publicPath}/project-images/desmos-renderer.png`,
     href: "https://github.com/big-oofff/Desmos-Animations",
   },
   {
@@ -27,7 +25,6 @@ const showcaseItems = [
     description: "A video converted into frames, retimed, and rendered in Desmos.",
     type: "video",
     src: "https://github.com/user-attachments/assets/6852923c-c3c6-47d5-af07-fac5f6eb8748",
-    poster: `${publicPath}/project-images/desmos-renderer.png`,
     href: "https://github.com/big-oofff/Desmos-Animations",
   },
   {
@@ -36,7 +33,6 @@ const showcaseItems = [
     description: "A longer FFmpeg-assisted animation experiment rendered as Desmos curves.",
     type: "video",
     src: "https://github.com/user-attachments/assets/ca53252e-fa93-4ed4-adbb-861dae18633d",
-    poster: `${publicPath}/project-images/desmos-renderer.png`,
     href: "https://github.com/big-oofff/Desmos-Animations",
   },
   {
