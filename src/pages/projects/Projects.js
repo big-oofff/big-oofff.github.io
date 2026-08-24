@@ -10,6 +10,7 @@ import ProjectsImg from "./ProjectsImg";
 const languageDetails = {
   Python: { icon: "fab fa-python" },
   JavaScript: { icon: "fab fa-js-square" },
+  React: { icon: "fab fa-react" },
   HTML: { icon: "fab fa-html5" },
   CSS: { icon: "fab fa-css3-alt" },
   Markdown: { icon: "fab fa-markdown" },
@@ -121,14 +122,26 @@ const featuredWork = [
 
 const moreProjects = [
   {
-    title: "Desmos Bézier Renderer",
-    type: "Image Processing + Creative Coding",
+    title: "Portfolio Website",
+    type: "Web Development",
     description:
-      "Converts images and video frames into Bézier curves that render as animated artwork in the Desmos Graphing Calculator.",
-    image: "/project-images/desmos-renderer.png",
-    imageAlt: "Bézier-curve artwork rendered in Desmos",
-    languages: ["Python", "JavaScript", "HTML", "CSS"],
-    repoUrl: "https://github.com/big-oofff/DesmosBezierRenderer",
+      "A responsive React portfolio that brings together my research, projects, resume, and professional links in one place.",
+    imageAlt: "Source preview from Thomas Xiao's React portfolio website",
+    codeLabel: "src/pages/projects/Projects.js",
+    codeLines: [
+      "<div className=\"portfolio-project-grid featured-grid\">",
+      "  {featuredWork.map((project) => (",
+      "    <ProjectCard",
+      "      project={project}",
+      "      theme={theme}",
+      "      paper={true}",
+      "    />",
+      "  ))}",
+      "</div>",
+    ],
+    languages: ["React", "JavaScript", "HTML", "CSS"],
+    repoUrl: "https://github.com/big-oofff/big-oofff.github.io",
+    liveUrl: "https://thomasxiao.org/",
   },
   {
     title: "Desmos Animations",
