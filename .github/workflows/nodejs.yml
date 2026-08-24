@@ -23,7 +23,9 @@ jobs:
           node-version: 20.x
           cache: npm
       - name: Prepare current resume
-        run: base64 --decode public/Thomas-Xiao-Resume.pdf.b64 > public/Thomas-Xiao-Resume.pdf
+        run: |
+          base64 --decode public/Thomas-Xiao-Resume.pdf.b64 > public/Thomas-Xiao-Resume.pdf
+          rm public/Thomas-Xiao-Resume.pdf.b64
       - run: npm ci
       - run: npm run build
       - name: Deploy to GitHub Pages
