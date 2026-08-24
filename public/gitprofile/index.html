@@ -1,20 +1,17 @@
 <!doctype html>
-<html lang="en" data-theme="default">
+<html lang="en" data-theme="nord">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Thomas Xiao's online resume — applied mathematics, research, scientific computing, and selected projects." />
     <title>Thomas's Online Resume</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
-    <link rel="shortcut icon" href="/icons/favicon.ico" />
-    <link rel="manifest" href="/icons/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="code.svg?v=20260823" />
+    <link rel="shortcut icon" href="code.svg?v=20260823" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="styles.css?v=gitprofile-20260823-resume" />
+    <link rel="stylesheet" href="styles.css?v=gitprofile-20260823-themes" />
   </head>
   <body>
     <main class="layout">
@@ -22,9 +19,42 @@
         <section class="panel theme-panel">
           <label for="theme-select"><strong>Theme</strong><span id="theme-name">Default</span></label>
           <select id="theme-select" aria-label="Change theme">
-            <option value="default">Default</option>
+            <option value="light">Light</option>
             <option value="dark">Dark</option>
+            <option value="cupcake">Cupcake</option>
+            <option value="bumblebee">Bumblebee</option>
             <option value="emerald">Emerald</option>
+            <option value="corporate">Corporate</option>
+            <option value="synthwave">Synthwave</option>
+            <option value="retro">Retro</option>
+            <option value="cyberpunk">Cyberpunk</option>
+            <option value="valentine">Valentine</option>
+            <option value="halloween">Halloween</option>
+            <option value="garden">Garden</option>
+            <option value="forest">Forest</option>
+            <option value="aqua">Aqua</option>
+            <option value="lofi">Lofi</option>
+            <option value="pastel">Pastel</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="wireframe">Wireframe</option>
+            <option value="black">Black</option>
+            <option value="luxury">Luxury</option>
+            <option value="dracula">Dracula</option>
+            <option value="cmyk">CMYK</option>
+            <option value="autumn">Autumn</option>
+            <option value="business">Business</option>
+            <option value="acid">Acid</option>
+            <option value="lemonade">Lemonade</option>
+            <option value="night">Night</option>
+            <option value="coffee">Coffee</option>
+            <option value="winter">Winter</option>
+            <option value="dim">Dim</option>
+            <option value="nord">Nord</option>
+            <option value="sunset">Sunset</option>
+            <option value="caramellatte">Caramellatte</option>
+            <option value="abyss">Abyss</option>
+            <option value="silk">Silk</option>
+            <option value="procyon">Procyon</option>
           </select>
         </section>
 
@@ -134,14 +164,17 @@
     <script>
       const select = document.getElementById('theme-select');
       const label = document.getElementById('theme-name');
-      const saved = localStorage.getItem('gitprofile-theme-v2') || 'default';
-      select.value = saved;
-      document.documentElement.dataset.theme = saved;
-      label.textContent = saved[0].toUpperCase() + saved.slice(1);
+      const previousTheme = localStorage.getItem('gitprofile-theme-v2');
+      const savedTheme = localStorage.getItem('gitprofile-theme-v3') || previousTheme || 'nord';
+      const normalizedTheme = savedTheme === 'default' ? 'light' : savedTheme;
+      const availableThemes = Array.from(select.options).map((option) => option.value);
+      select.value = availableThemes.includes(normalizedTheme) ? normalizedTheme : 'nord';
+      document.documentElement.dataset.theme = select.value;
+      label.textContent = select.options[select.selectedIndex].text;
       select.addEventListener('change', () => {
         document.documentElement.dataset.theme = select.value;
         label.textContent = select.options[select.selectedIndex].text;
-        localStorage.setItem('gitprofile-theme-v2', select.value);
+        localStorage.setItem('gitprofile-theme-v3', select.value);
       });
     </script>
   </body>
