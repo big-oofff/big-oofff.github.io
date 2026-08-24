@@ -144,6 +144,27 @@ const moreProjects = [
     liveUrl: "https://thomasxiao.org/",
   },
   {
+    title: "GitProfile Online Resume",
+    type: "Online Resume + Open-Source Customization",
+    description:
+      "A focused online resume built from the GitProfile format and customized around my research, experience, technical stack, and selected projects.",
+    imageAlt: "Source preview from Thomas Xiao's GitProfile online resume",
+    codeLabel: "public/gitprofile/index.html",
+    codeLines: [
+      "<title>Thomas's Online Resume</title>",
+      "",
+      "<h1>Thomas Xiao</h1>",
+      "<p class=\"tagline\">Applied Math @ CMU</p>",
+      "",
+      "<h2>Selected GitHub Projects</h2>",
+    ],
+    languages: ["HTML", "CSS", "JavaScript"],
+    repoUrl:
+      "https://github.com/big-oofff/big-oofff.github.io/tree/master/public/gitprofile",
+    liveUrl: "https://thomasxiao.org/gitprofile/",
+    templateUrl: "https://github.com/arifszn/gitprofile",
+  },
+  {
     title: "Desmos Animations",
     type: "Animation Collection",
     description:
@@ -328,6 +349,11 @@ function ProjectCard({ project, theme, paper }) {
           {project.liveUrl ? (
             <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
               Live demo <span aria-hidden="true">↗</span>
+            </a>
+          ) : null}
+          {project.templateUrl ? (
+            <a href={project.templateUrl} target="_blank" rel="noopener noreferrer">
+              Original template <span aria-hidden="true">↗</span>
             </a>
           ) : null}
           <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
