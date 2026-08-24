@@ -118,8 +118,8 @@
   width: 100%;
   aspect-ratio: 3 / 2;
   display: block;
-  object-fit: cover;
-  background: #f6fbfa;
+  object-fit: contain;
+  background: #f4faf8;
 }
 
 .programming-showcase-nav {
@@ -162,6 +162,14 @@
   justify-content: space-between;
   gap: 18px;
   padding: 15px 7px 12px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.programming-showcase-details > div:first-child {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .programming-showcase-details h2 {
@@ -169,6 +177,7 @@
   font-family: "Google Sans Medium";
   font-size: 19px;
   line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .programming-showcase-details p {
@@ -176,10 +185,12 @@
   font-family: "Google Sans Regular";
   font-size: 14px;
   line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .programming-showcase-meta {
   min-width: 92px;
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
