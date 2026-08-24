@@ -118,6 +118,7 @@
   width: 100%;
   aspect-ratio: 3 / 2;
   display: block;
+  /* Preserve the complete visual instead of cropping it to the card. */
   object-fit: contain;
   background: #f4faf8;
 }
