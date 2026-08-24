@@ -656,13 +656,17 @@
 @media (prefers-reduced-motion: reduce) {
   .math-team-figure,
   .berkeley-home-gallery,
-  .programming-showcase {
+  .programming-showcase,
+  .online-resume-home-link,
+  .online-resume-home-visual img {
     transition: none;
   }
 
   .math-team-figure:hover,
   .berkeley-home-gallery:hover,
-  .programming-showcase:hover {
+  .programming-showcase:hover,
+  .online-resume-home-link:hover,
+  .online-resume-home-link:hover .online-resume-home-visual img {
     transform: none;
   }
 }
