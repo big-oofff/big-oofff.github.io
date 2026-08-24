@@ -81,6 +81,7 @@ img { max-width:100%; }
 .timeline li { position:relative; padding-left:10px; }
 .timeline li::before { content:""; position:absolute; left:-23px; top:4px; width:8px; height:8px; border-radius:50%; background:var(--text); outline:4px solid var(--panel); }
 .timeline span { color:var(--muted); font-size:11px; }
+.timeline li > span:first-child { display:block; margin-bottom:2px; }
 .timeline h3 { margin:3px 0 1px; font-size:14px; }
 .timeline a,.timeline strong { font-size:12px; font-weight:600; }
 .timeline p { margin:6px 0 0; color:var(--muted); font-size:11px; }
