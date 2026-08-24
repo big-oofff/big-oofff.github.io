@@ -35,18 +35,13 @@ export default class FullStackImg extends Component {
         <figure
           className="berkeley-home-card berkeley-home-card-overlap"
           style={cardStyle}
+          aria-label="A lighthearted reset between debate rounds at Berkeley"
         >
           <img
             src={`${publicPath}/experience-images/berkeley-between-rounds.svg`}
             alt="Thomas taking a lighthearted break between debate rounds at Berkeley"
             loading="lazy"
           />
-          <figcaption>
-            <strong style={{ color: theme.text }}>Between rounds</strong>
-            <span style={{ color: theme.secondaryText }}>
-              A quick reset during a long day of competition.
-            </span>
-          </figcaption>
         </figure>
       </section>
     );
