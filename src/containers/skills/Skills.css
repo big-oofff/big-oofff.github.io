@@ -51,6 +51,13 @@
   border: 1px solid;
   border-radius: 22px;
   box-shadow: 0 18px 44px rgba(20, 28, 58, 0.16);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  transform-origin: center;
+}
+
+.math-team-figure:hover {
+  box-shadow: 0 22px 50px rgba(20, 28, 58, 0.21);
+  transform: translateY(-3px) scale(1.018);
 }
 
 .math-team-photo {
@@ -82,6 +89,75 @@
   border-radius: 50%;
 }
 
+.berkeley-home-gallery {
+  width: min(100%, 660px);
+  min-height: 490px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 56px auto 28px;
+  padding: 12px 42px 118px 10px;
+  transition: transform 220ms ease, filter 220ms ease;
+  transform-origin: center;
+}
+
+.berkeley-home-gallery:hover {
+  filter: saturate(1.03);
+  transform: scale(1.018);
+}
+
+.berkeley-home-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid;
+  border-radius: 18px;
+  box-shadow: 0 18px 42px rgba(20, 28, 58, 0.17);
+}
+
+.berkeley-home-card-main {
+  width: 88%;
+}
+
+.berkeley-home-card-overlap {
+  width: 48%;
+  position: absolute;
+  right: 8px;
+  bottom: 20px;
+  z-index: 2;
+  transform: rotate(2.4deg);
+}
+
+.berkeley-home-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  object-fit: cover;
+  object-position: center 46%;
+}
+
+.berkeley-home-card-overlap img {
+  aspect-ratio: 4 / 3;
+}
+
+.berkeley-home-card figcaption {
+  box-sizing: border-box;
+  padding: 12px 14px 14px;
+  font-family: "Google Sans Regular";
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.berkeley-home-card figcaption strong,
+.berkeley-home-card figcaption span {
+  display: block;
+}
+
+.berkeley-home-card figcaption strong {
+  margin-bottom: 3px;
+  font-family: "Google Sans Medium";
+  font-size: 15px;
+}
+
 .skills-image-div > .programming-showcase {
   width: min(100%, 660px);
   max-width: 100%;
@@ -100,6 +176,13 @@
   border-radius: 22px;
   box-shadow: 0 18px 44px rgba(20, 28, 58, 0.16);
   outline: none;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  transform-origin: center;
+}
+
+.programming-showcase:hover {
+  box-shadow: 0 22px 50px rgba(20, 28, 58, 0.21);
+  transform: translateY(-3px) scale(1.012);
 }
 
 .programming-showcase:focus-visible {
@@ -411,6 +494,32 @@
     font-size: 14px;
   }
 
+  .berkeley-home-gallery {
+    width: calc(100% - 18px);
+    min-height: 0;
+    margin-top: 4px;
+    padding: 8px 24px 92px 4px;
+  }
+
+  .berkeley-home-card-main {
+    width: 94%;
+  }
+
+  .berkeley-home-card-overlap {
+    width: 52%;
+    right: 2px;
+    bottom: 12px;
+  }
+
+  .berkeley-home-card figcaption {
+    padding: 9px 10px 11px;
+    font-size: 11px;
+  }
+
+  .berkeley-home-card figcaption strong {
+    font-size: 13px;
+  }
+
   .skills-image-div > .programming-showcase {
     width: calc(100% - 24px);
     margin-top: 0;
@@ -446,5 +555,19 @@
     width: 36px;
     height: 36px;
     font-size: 29px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .math-team-figure,
+  .berkeley-home-gallery,
+  .programming-showcase {
+    transition: none;
+  }
+
+  .math-team-figure:hover,
+  .berkeley-home-gallery:hover,
+  .programming-showcase:hover {
+    transform: none;
   }
 }
