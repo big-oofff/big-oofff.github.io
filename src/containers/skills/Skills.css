@@ -1,3 +1,4 @@
+/* Keep interactive media contained within the two-column skills layout. */
 .skills-main-div {
   display: flex;
   width: 100%;
