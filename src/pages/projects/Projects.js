@@ -148,16 +148,8 @@ const moreProjects = [
     type: "Online Resume + Open-Source Customization",
     description:
       "A focused online resume built from the GitProfile format and customized around my research, experience, technical stack, and selected projects.",
-    imageAlt: "Source preview from Thomas Xiao's GitProfile online resume",
-    codeLabel: "public/gitprofile/index.html",
-    codeLines: [
-      "<title>Thomas's Online Resume</title>",
-      "",
-      "<h1>Thomas Xiao</h1>",
-      "<p class=\"tagline\">Applied Math @ CMU</p>",
-      "",
-      "<h2>Selected GitHub Projects</h2>",
-    ],
+    image: "/project-images/online-resume-preview.svg",
+    imageAlt: "Thomas Xiao's GitProfile online resume displayed in a browser",
     languages: ["HTML", "CSS", "JavaScript"],
     repoUrl:
       "https://github.com/big-oofff/big-oofff.github.io/tree/master/public/gitprofile",
