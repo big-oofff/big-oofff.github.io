@@ -4,20 +4,6 @@ const publicPath = process.env.PUBLIC_URL;
 
 const showcaseItems = [
   {
-    title: "Desmos Bézier Renderer",
-    description: "Images and video frames rebuilt as animated Bézier curves in Desmos.",
-    type: "image",
-    src: `${publicPath}/project-images/desmos-renderer.png`,
-    href: "https://github.com/big-oofff/DesmosBezierRenderer",
-  },
-  {
-    title: "Mosaic Me",
-    description: "A physical LEGO mosaic built from my color-matching and image-processing workflow.",
-    type: "image",
-    src: `${publicPath}/project-images/mosaic-physical.jpg`,
-    href: "https://github.com/big-oofff/mosaic-me",
-  },
-  {
     title: "Desmos FFmpeg Animation",
     description: "An FFmpeg-assisted animation rendered frame by frame with Bézier curves.",
     type: "video",
@@ -26,11 +12,35 @@ const showcaseItems = [
     href: "https://github.com/big-oofff/Desmos-Animations",
   },
   {
-    title: "Desmos Animation Loop",
-    description: "A looping result from the same image-to-curves animation workflow.",
+    title: "D4DJ Desmos Render",
+    description: "A processed animation from my FFmpeg-to-Desmos workflow.",
+    type: "video",
+    src: "https://github.com/user-attachments/assets/9162eab0-5a35-4fe1-a684-9526ebcbb94d",
+    poster: `${publicPath}/project-images/desmos-renderer.png`,
+    href: "https://github.com/big-oofff/Desmos-Animations",
+  },
+  {
+    title: "TIE Fighter Desmos Render",
+    description: "A video converted into frames, retimed, and rendered in Desmos.",
+    type: "video",
+    src: "https://github.com/user-attachments/assets/6852923c-c3c6-47d5-af07-fac5f6eb8748",
+    poster: `${publicPath}/project-images/desmos-renderer.png`,
+    href: "https://github.com/big-oofff/Desmos-Animations",
+  },
+  {
+    title: "Venator Desmos Render",
+    description: "A longer FFmpeg-assisted animation experiment rendered as Desmos curves.",
+    type: "video",
+    src: "https://github.com/user-attachments/assets/ca53252e-fa93-4ed4-adbb-861dae18633d",
+    poster: `${publicPath}/project-images/desmos-renderer.png`,
+    href: "https://github.com/big-oofff/Desmos-Animations",
+  },
+  {
+    title: "Mosaic Me",
+    description: "A physical LEGO mosaic built from my color-matching and image-processing workflow.",
     type: "image",
-    src: "https://github.com/user-attachments/assets/7cb25321-8ccc-4a9b-841d-5b2624cf85a9",
-    href: "https://github.com/big-oofff/Desmos-Animations/blob/main/jc.md",
+    src: `${publicPath}/project-images/mosaic-physical.jpg`,
+    href: "https://github.com/big-oofff/mosaic-me",
   },
   {
     title: "Spinning Teacup Model",
@@ -45,30 +55,6 @@ const showcaseItems = [
     type: "image",
     src: `${publicPath}/project-images/hot-air-balloon.jpg`,
     href: "https://github.com/big-oofff/hot-air-balloon",
-  },
-  {
-    title: "D4DJ Desmos Render",
-    description: "A processed animation from my FFmpeg-to-Desmos workflow.",
-    type: "video",
-    src: "https://github.com/user-attachments/assets/9162eab0-5a35-4fe1-a684-9526ebcbb94d",
-    poster: `${publicPath}/project-images/desmos-renderer.png`,
-    href: "https://github.com/big-oofff/Desmos-Animations/blob/main/d4dj.md",
-  },
-  {
-    title: "TIE Fighter Desmos Render",
-    description: "A video converted into frames, retimed, and rendered in Desmos.",
-    type: "video",
-    src: "https://github.com/user-attachments/assets/6852923c-c3c6-47d5-af07-fac5f6eb8748",
-    poster: `${publicPath}/project-images/desmos-renderer.png`,
-    href: "https://github.com/big-oofff/Desmos-Animations/blob/main/tiefighter.md",
-  },
-  {
-    title: "Venator Desmos Render",
-    description: "A longer FFmpeg-assisted animation experiment rendered as Desmos curves.",
-    type: "video",
-    src: "https://github.com/user-attachments/assets/ca53252e-fa93-4ed4-adbb-861dae18633d",
-    poster: `${publicPath}/project-images/desmos-renderer.png`,
-    href: "https://github.com/big-oofff/Desmos-Animations/blob/main/venator.md",
   },
 ];
 
