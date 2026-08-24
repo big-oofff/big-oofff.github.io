@@ -42,6 +42,92 @@
   margin-top: 100px;
 }
 
+.online-resume-home {
+  width: min(1120px, 92%);
+  margin: 46px auto 88px;
+}
+
+.online-resume-home-link {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  gap: 34px;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 188, 174, 0.34);
+  border-radius: 24px;
+  box-shadow: 0 18px 44px rgba(20, 28, 58, 0.14);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.online-resume-home-link:hover,
+.online-resume-home-link:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 56px rgba(20, 28, 58, 0.2);
+}
+
+.online-resume-home-link:focus-visible {
+  outline: 3px solid rgba(0, 188, 174, 0.45);
+  outline-offset: 5px;
+}
+
+.online-resume-home-visual {
+  overflow: hidden;
+  border: 1px solid rgba(20, 28, 58, 0.13);
+  border-radius: 17px;
+  box-shadow: 0 14px 30px rgba(20, 28, 58, 0.14);
+}
+
+.online-resume-home-visual img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 240ms ease;
+}
+
+.online-resume-home-link:hover .online-resume-home-visual img,
+.online-resume-home-link:focus-visible .online-resume-home-visual img {
+  transform: scale(1.02);
+}
+
+.online-resume-home-copy {
+  padding: 18px 18px 18px 0;
+  font-family: "Google Sans Regular";
+}
+
+.online-resume-eyebrow {
+  margin: 0 0 9px;
+  color: #00a99d;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.online-resume-home-copy h2 {
+  margin: 0 0 12px;
+  font-family: "Google Sans Medium";
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.05;
+}
+
+.online-resume-home-copy > p:not(.online-resume-eyebrow) {
+  margin: 0 0 22px;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.online-resume-home-copy > span {
+  color: #00a99d;
+  font-family: "Google Sans Medium";
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .math-team-figure {
   width: min(100%, 620px);
   margin-right: auto;
@@ -447,6 +533,15 @@
   } */
 }
 @media (max-width: 768px) {
+  .online-resume-home-link {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .online-resume-home-copy {
+    padding: 18px 10px 12px;
+  }
+
   .skills-heading {
     font-size: 30px;
     text-align: center;
