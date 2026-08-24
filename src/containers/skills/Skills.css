@@ -111,7 +111,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 15px;
-  background: #081f2a;
+  background: #e9f4f2;
 }
 
 .programming-showcase-media {
@@ -121,6 +121,50 @@
   /* Preserve the complete visual instead of cropping it to the card. */
   object-fit: contain;
   background: #f4faf8;
+}
+
+.programming-showcase-video {
+  transition: opacity 180ms ease;
+}
+
+.programming-showcase-video.is-loading {
+  opacity: 0;
+}
+
+.programming-showcase-video.is-ready {
+  opacity: 1;
+}
+
+.programming-showcase-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #416b73;
+  background: #eef8f6;
+  font-family: "Google Sans Medium";
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+
+.programming-showcase-loading-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #11b8b2;
+  box-shadow: 0 0 0 0 rgba(17, 184, 178, 0.35);
+  animation: programming-showcase-pulse 1.2s ease-out infinite;
+}
+
+@keyframes programming-showcase-pulse {
+  70% {
+    box-shadow: 0 0 0 9px rgba(17, 184, 178, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(17, 184, 178, 0);
+  }
 }
 
 .programming-showcase-nav {
@@ -254,18 +298,50 @@
   border-radius: 6px;
 }
 
+.programming-showcase-video-thumb {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 7px 8px;
+  border-radius: 6px;
+  color: #eafffb;
+  background: linear-gradient(145deg, #07556d, #0c8c91);
+  font-family: "Google Sans Medium";
+  text-align: left;
+}
+
+.programming-showcase-video-thumb small {
+  font-size: 7px;
+  line-height: 1.1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.76;
+}
+
+.programming-showcase-video-thumb strong {
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 10px;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .programming-showcase-play {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  inset: 50% auto auto 50%;
+  inset: 6px 6px auto auto;
   display: grid;
   place-items: center;
   border-radius: 50%;
   color: #fff;
   background: rgba(7, 31, 42, 0.78);
-  font-size: 10px;
-  transform: translate(-50%, -50%);
+  font-size: 8px;
 }
 
 .skills-heading {
