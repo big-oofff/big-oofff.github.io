@@ -176,12 +176,12 @@
 }
 
 .berkeley-home-gallery {
-  width: min(100%, 660px);
-  min-height: 490px;
+  width: min(100%, 760px);
+  min-height: 520px;
   position: relative;
   box-sizing: border-box;
-  margin: 56px auto 28px;
-  padding: 12px 42px 118px 10px;
+  margin: 44px auto 28px;
+  padding: 12px 54px 28px 8px;
   transition: transform 220ms ease, filter 220ms ease;
   transform-origin: center;
 }
@@ -200,14 +200,14 @@
 }
 
 .berkeley-home-card-main {
-  width: 88%;
+  width: 94%;
 }
 
 .berkeley-home-card-overlap {
-  width: 48%;
+  width: 50%;
   position: absolute;
-  right: 8px;
-  bottom: 20px;
+  top: 74px;
+  right: 0;
   z-index: 2;
   transform: rotate(2.4deg);
 }
@@ -222,6 +222,7 @@
 
 .berkeley-home-card-overlap img {
   aspect-ratio: 4 / 3;
+  object-position: center;
 }
 
 .berkeley-home-card figcaption {
@@ -593,17 +594,19 @@
     width: calc(100% - 18px);
     min-height: 0;
     margin-top: 4px;
-    padding: 8px 24px 92px 4px;
+    padding: 8px 4px 20px;
   }
 
   .berkeley-home-card-main {
-    width: 94%;
+    width: 100%;
   }
 
   .berkeley-home-card-overlap {
-    width: 52%;
-    right: 2px;
-    bottom: 12px;
+    width: 72%;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 16px 0 0 auto;
   }
 
   .berkeley-home-card figcaption {
