@@ -9,6 +9,41 @@ import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
 import ProgrammingShowcase from "./ProgrammingShowcase";
 
+function OnlineResumeSpotlight({ theme }) {
+  return (
+    <section className="online-resume-home" aria-labelledby="online-resume-title">
+      <Fade bottom duration={1200} distance="24px">
+        <a
+          className="online-resume-home-link"
+          href="/gitprofile/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ backgroundColor: theme.highlight }}
+        >
+          <div className="online-resume-home-visual">
+            <img
+              src={`${process.env.PUBLIC_URL}/project-images/online-resume-preview.svg`}
+              alt="Preview of Thomas Xiao's online resume"
+              loading="lazy"
+            />
+          </div>
+          <div className="online-resume-home-copy">
+            <p className="online-resume-eyebrow">A second way to explore my work</p>
+            <h2 id="online-resume-title" style={{ color: theme.text }}>
+              Online Resume
+            </h2>
+            <p style={{ color: theme.secondaryText }}>
+              A compact, project-focused view of my research, technical stack,
+              experience, and publications.
+            </p>
+            <span>Open online resume&nbsp; ↗</span>
+          </div>
+        </a>
+      </Fade>
+    </section>
+  );
+}
+
 function GetSkillSvg(props) {
   if (props.fileName === "DataScienceImg")
     return <DataScienceImg theme={props.theme} />;
@@ -63,6 +98,7 @@ class SkillSection extends Component {
             </div>
           );
         })}
+        <OnlineResumeSpotlight theme={theme} />
       </div>
     );
   }
