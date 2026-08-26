@@ -412,7 +412,7 @@ const degrees = {
       alt_name: "CMU",
       duration: "2026 - 2030",
       descriptions: [
-        "Intended concentration: Computational and Applied Mathematics. I'm exploring quantitative research and scientific computing - especially work that connects strong models with clear explanations!",
+        "Intended concentration: Computational and Applied Mathematics",
       ],
       website_link: "https://www.cmu.edu/",
     },
