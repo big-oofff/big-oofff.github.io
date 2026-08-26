@@ -34,7 +34,12 @@ export default class FullStackImg extends Component {
               />
             </div>
           </div>
-          <figcaption style={{ color: theme.secondaryText }}>
+          <figcaption className="math-team-caption" style={{ color: theme.text }}>
+            <span
+              className="math-team-caption-dot"
+              style={{ backgroundColor: theme.imageHighlight }}
+              aria-hidden="true"
+            />
             Me with my Berkeley debate tournament team, 2024
           </figcaption>
         </figure>

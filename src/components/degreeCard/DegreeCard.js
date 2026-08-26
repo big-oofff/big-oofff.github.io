@@ -17,18 +17,15 @@ class DegreeCard extends Component {
     const degree = this.props.degree;
     const theme = this.props.theme;
     const logo = resolveLogo(degree.logo_path);
+    const isCmuLogo = degree.logo_path === "cmu.png";
 
     return (
       <div className="degree-card">
         {logo && (
           <Flip left duration={2000}>
-            <div className="card-img">
+            <div className={`card-img${isCmuLogo ? " card-img-cmu" : ""}`}>
               <img
-                style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  transform: "scale(0.9)",
-                }}
+                className="degree-logo"
                 src={logo}
                 alt={degree.alt_name}
               />

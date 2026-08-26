@@ -235,24 +235,9 @@
   transform: scale(1.025);
 }
 
-.berkeley-home-card figcaption {
+.berkeley-home-card figcaption.math-team-caption {
   box-sizing: border-box;
-  padding: 12px 14px 14px;
-  font-family: "Google Sans Regular";
-  font-size: 13px;
-  line-height: 1.4;
-  text-align: left;
-}
-
-.berkeley-home-card figcaption strong,
-.berkeley-home-card figcaption span {
-  display: block;
-}
-
-.berkeley-home-card figcaption strong {
-  margin-bottom: 3px;
-  font-family: "Google Sans Medium";
-  font-size: 15px;
+  padding: 14px 10px 15px;
 }
 
 .skills-image-div > .programming-showcase {
@@ -620,13 +605,9 @@
     height: clamp(170px, 48vw, 240px);
   }
 
-  .berkeley-home-card figcaption {
-    padding: 9px 10px 11px;
-    font-size: 11px;
-  }
-
-  .berkeley-home-card figcaption strong {
-    font-size: 13px;
+  .berkeley-home-card figcaption.math-team-caption {
+    padding: 11px 9px 12px;
+    font-size: 14px;
   }
 
   .skills-image-div > .programming-showcase {
