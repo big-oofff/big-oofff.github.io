@@ -1,4 +1,4 @@
-ıK®Ïí†‰š³š£üé®‡â•íh¥êÚ¶*'‹iz¹¢¶×ıK®Ïí†‰š³š£üé®‡â•ç!yÉ-ÆßÔ±êìşØh™«1‰ª?®ù¿±Êâ¦Û?®ù¶öŠ^­«b¢yè¶—«š+myÚl/* Change this file to get your personal Porfolio */
+/* Change this file to get your personal Porfolio */
 
 // Website related settings
 const settings = {

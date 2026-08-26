@@ -1,4 +1,4 @@
-ıK®Ïí†‰š³š£üé®‡â•íh¥êÚ¶*'‹iz¹¢¶×ıK®Ïí†‰š³š£üé®‡â•ç!yÉ-ÆßÔ±êìşØh™«1‰ª?®ù¿±Êâ¦Û?®ù¶öŠ^­«b¢yè¶—«š+myÚlimport React, { Component } from "react";
+import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
