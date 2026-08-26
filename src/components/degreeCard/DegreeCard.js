@@ -24,19 +24,12 @@ class DegreeCard extends Component {
         {logo && (
           <Flip left duration={2000}>
             <div className={`card-img${isCmuLogo ? " card-img-cmu" : ""}`}>
-              <img
-                className="degree-logo"
-                src={logo}
-                alt={degree.alt_name}
-              />
+              <img className="degree-logo" src={logo} alt={degree.alt_name} />
             </div>
           </Flip>
         )}
         <Fade right duration={2000} distance="40px">
-          <div
-            className="card-body"
-            style={{ width: logo ? "90%" : "100%" }}
-          >
+          <div className="card-body" style={{ width: logo ? "90%" : "100%" }}>
             <div
               className="body-header"
               style={{ backgroundColor: theme.headerColor }}

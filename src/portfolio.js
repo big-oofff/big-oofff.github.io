@@ -8,7 +8,8 @@ const settings = {
 //SEO Related settings
 const seo = {
   title: "Thomas's Portfolio",
-  description: "Thomas Xiao's personal site for math, code, research, and projects.",
+  description:
+    "Thomas Xiao's personal site for math, code, research, and projects.",
   og: {
     title: "Thomas Xiao Portfolio",
     type: "website",
@@ -21,11 +22,10 @@ const greeting = {
   title: "Thomas Xiao",
   logo_name: "ThomasXiao",
   nickname: "肖舜齐",
-  subTitle: "Hi, I'm Thomas! I study applied math at Carnegie Mellon and enjoy research, coding projects, and interesting problems.",
-  resumeLink:
-    "/Thomas-Xiao-Resume.pdf",
-  resume:
-    "/Thomas-Xiao-Resume.pdf",
+  subTitle:
+    "Hi, I'm Thomas! I study applied math at Carnegie Mellon and enjoy research, coding projects, and interesting problems.",
+  resumeLink: "/Thomas-Xiao-Resume.pdf",
+  resume: "/Thomas-Xiao-Resume.pdf",
   githubProfile: "https://github.com/big-oofff",
 };
 
