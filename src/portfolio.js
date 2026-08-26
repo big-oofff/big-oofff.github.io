@@ -1,4 +1,4 @@
-/* Change this file to get your personal Porfolio */
+ıK®Ïí†‰š³š£üé®‡â•íh¥êÚ¶*'‹iz¹¢¶×ıK®Ïí†‰š³š£üé®‡â•ç!yÉ-ÆßÔ±êìşØh™«1‰ª?®ù¿±Êâ¦Û?®ù¶öŠ^­«b¢yè¶—«š+myÚl/* Change this file to get your personal Porfolio */
 
 // Website related settings
 const settings = {
@@ -407,12 +407,12 @@ const degrees = {
   degrees: [
     {
       title: "Carnegie Mellon University",
-      subtitle: "B.S. in Applied Mathematics",
+      subtitle: "B.S. in Mathematical Sciences",
       logo_path: "cmu.png",
       alt_name: "CMU",
       duration: "2026 - 2030",
       descriptions: [
-        "I'm studying Applied Mathematics at Carnegie Mellon and exploring quantitative research and scientific computing - especially work that connects strong models with clear explanations!",
+        "Intended concentration: Computational and Applied Mathematics. I'm exploring quantitative research and scientific computing - especially work that connects strong models with clear explanations!",
       ],
       website_link: "https://www.cmu.edu/",
     },

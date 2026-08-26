@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+ıK®Ïí†‰š³š£üé®‡â•íh¥êÚ¶*'‹iz¹¢¶×ıK®Ïí†‰š³š£üé®‡â•ç!yÉ-ÆßÔ±êìşØh™«1‰ª?®ù¿±Êâ¦Û?®ù¶öŠ^­«b¢yè¶—«š+myÚlimport React, { Component } from "react";
 
 const publicPath = process.env.PUBLIC_URL;
 
@@ -34,15 +34,10 @@ export default class FullStackImg extends Component {
               />
             </div>
           </div>
-          <figcaption>
-            <strong style={{ color: theme.text }}>Our Berkeley team</strong>
-            <span style={{ color: theme.secondaryText }}>
-              Preparing together and adapting after every round made the
-              tournament a true team effort.
-            </span>
+          <figcaption style={{ color: theme.secondaryText }}>
+            Me with my Berkeley debate tournament team, 2024
           </figcaption>
         </figure>
-
       </section>
     );
   }

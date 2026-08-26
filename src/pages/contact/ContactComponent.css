@@ -1,4 +1,4 @@
-.contact-main {
+ýK®Ïí†‰š³š£üé®‡â•íh¥êÚ¶*'ž‹iz¹¢¶×ýK®Ïí†‰š³š£üé®‡â•ç!yÉ-ÆßÔ±êìþØh™«1‰ª?®ù¿±Êâ¦Û?®ù¶öŠ^­«b¢yè¶—«š+myÚl.contact-main {
   width: 100%;
 }
 
@@ -58,6 +58,87 @@
 .contact-heading-img-div > * {
   max-width: 100%;
   height: auto;
+}
+
+.contact-photo-stack {
+  position: relative;
+  display: block;
+  min-height: 650px;
+  isolation: isolate;
+}
+
+.contact-photo-card {
+  position: absolute;
+  width: 47%;
+  aspect-ratio: 3 / 4;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px;
+  overflow: visible;
+  border: 1px solid;
+  border-radius: 20px;
+  box-shadow: 0 18px 38px rgba(20, 28, 58, 0.2);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.contact-photo-card::before {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 54px;
+  height: 20px;
+  border-radius: 3px;
+  background: rgba(0, 188, 174, 0.26);
+  content: "";
+  transform: translateX(-50%) rotate(-2deg);
+  backdrop-filter: blur(2px);
+}
+
+.contact-photo-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.contact-photo-airport {
+  top: 3%;
+  left: 5%;
+  z-index: 1;
+  transform: rotate(-5deg);
+}
+
+.contact-photo-lemur {
+  top: 16%;
+  right: 4%;
+  z-index: 2;
+  transform: rotate(6deg);
+}
+
+.contact-photo-hat {
+  top: 45%;
+  left: 27%;
+  z-index: 3;
+  transform: rotate(-1.5deg);
+}
+
+.contact-photo-airport:hover {
+  z-index: 5;
+  box-shadow: 0 24px 48px rgba(20, 28, 58, 0.26);
+  transform: translateY(-8px) rotate(-3deg) scale(1.035);
+}
+
+.contact-photo-lemur:hover {
+  z-index: 5;
+  box-shadow: 0 24px 48px rgba(20, 28, 58, 0.26);
+  transform: translateY(-8px) rotate(4deg) scale(1.035);
+}
+
+.contact-photo-hat:hover {
+  z-index: 5;
+  box-shadow: 0 24px 48px rgba(20, 28, 58, 0.26);
+  transform: translateY(-8px) rotate(0deg) scale(1.035);
 }
 
 .blog-heading-img-div > * {
@@ -176,6 +257,30 @@
     flex-direction: column;
   }
 
+  .contact-photo-stack {
+    width: min(100%, 560px);
+    min-height: 590px;
+    margin: 20px auto 12px;
+  }
+
+  .contact-photo-card {
+    width: 52%;
+  }
+
+  .contact-photo-airport {
+    left: 3%;
+  }
+
+  .contact-photo-lemur {
+    top: 14%;
+    right: 3%;
+  }
+
+  .contact-photo-hat {
+    top: 43%;
+    left: 24%;
+  }
+
   .contact-header-detail-text {
     font-size: 16px;
     margin-left: 0px;
@@ -190,5 +295,44 @@
     margin-right: 0px;
     line-height: normal;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-photo-stack {
+    min-height: 500px;
+  }
+
+  .contact-photo-card {
+    width: 56%;
+    padding: 6px;
+    border-radius: 16px;
+  }
+
+  .contact-photo-card img {
+    border-radius: 11px;
+  }
+
+  .contact-photo-hat {
+    top: 44%;
+    left: 22%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-photo-card {
+    transition: none;
+  }
+
+  .contact-photo-airport:hover {
+    transform: rotate(-5deg);
+  }
+
+  .contact-photo-lemur:hover {
+    transform: rotate(6deg);
+  }
+
+  .contact-photo-hat:hover {
+    transform: rotate(-1.5deg);
   }
 }

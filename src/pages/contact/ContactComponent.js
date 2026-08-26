@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+ıK®Ïí†‰š³š£üé®‡â•íh¥êÚ¶*'‹iz¹¢¶×ıK®Ïí†‰š³š£üé®‡â•ç!yÉ-ÆßÔ±êìşØh™«1‰ª?®ù¿±Êâ¦Û?®ù¶öŠ^­«b¢yè¶—«š+myÚlimport React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
@@ -13,21 +13,54 @@ const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
 const addressSection = contactPageData.addressSection;
 const phoneSection = contactPageData.phoneSection;
+const publicPath = process.env.PUBLIC_URL;
 
 class Contact extends Component {
   render() {
     const theme = this.props.theme;
+    const photoCardStyle = {
+      backgroundColor: theme.compImgHighlight,
+      borderColor: theme.imageHighlight,
+    };
     return (
       <div className="contact-main">
         <Header theme={theme} />
         <div className="basic-contact">
           <Fade bottom duration={1000} distance="40px">
             <div className="contact-heading-div">
-              <div className="contact-heading-img-div">
-                <img
-                  src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
-                  alt=""
-                />
+              <div
+                className="contact-heading-img-div contact-photo-stack"
+                aria-label="A few candid photos of Thomas"
+              >
+                <figure
+                  className="contact-photo-card contact-photo-airport"
+                  style={photoCardStyle}
+                >
+                  <img
+                    src={`${publicPath}/contact-images/airport-thumbs-up.jpg`}
+                    alt="Thomas smiling and giving a thumbs-up"
+                  />
+                </figure>
+                <figure
+                  className="contact-photo-card contact-photo-lemur"
+                  style={photoCardStyle}
+                >
+                  <img
+                    src={`${publicPath}/contact-images/lemur-shoulder.jpg`}
+                    alt="Thomas with a lemur perched on his shoulder"
+                    loading="lazy"
+                  />
+                </figure>
+                <figure
+                  className="contact-photo-card contact-photo-hat"
+                  style={photoCardStyle}
+                >
+                  <img
+                    src={`${publicPath}/contact-images/flower-hat.jpg`}
+                    alt="Thomas wearing a floral bucket hat and glasses"
+                    loading="lazy"
+                  />
+                </figure>
               </div>
               <div className="contact-heading-text-div">
                 <h1
