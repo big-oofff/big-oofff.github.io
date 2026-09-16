@@ -24,8 +24,8 @@ const greeting = {
   nickname: "肖舜齐",
   subTitle:
     "Hi, I'm Thomas! I study applied math at Carnegie Mellon and enjoy research, coding projects, and interesting problems.",
-  resumeLink: "/Thomas-Xiao-Resume.pdf",
-  resume: "/Thomas-Xiao-Resume.pdf",
+  resumeLink: "/Thomas-Xiao-SWE-Resume.pdf",
+  resume: "/Thomas-Xiao-SWE-Resume.pdf",
   githubProfile: "https://github.com/big-oofff",
 };
 
